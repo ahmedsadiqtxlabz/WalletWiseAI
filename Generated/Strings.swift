@@ -11,6 +11,20 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
   internal enum Onboarding {
+    internal enum Intro {
+      /// Next
+      internal static let button1 = L10n.tr("Localizable", "onboarding.intro.button1", fallback: "Next")
+      /// Get Started
+      internal static let button2 = L10n.tr("Localizable", "onboarding.intro.button2", fallback: "Get Started")
+      /// WalletWise uses AI for personalized expense insights and recommendations based on spending patterns.
+      internal static let detail1 = L10n.tr("Localizable", "onboarding.intro.detail1", fallback: "WalletWise uses AI for personalized expense insights and recommendations based on spending patterns.")
+      /// WalletWise integrates with Apple Wallet for seamless transaction import, streamlining expense tracking.
+      internal static let detail2 = L10n.tr("Localizable", "onboarding.intro.detail2", fallback: "WalletWise integrates with Apple Wallet for seamless transaction import, streamlining expense tracking.")
+      /// AI Expense Tracker & Budget Planner
+      internal static let title1 = L10n.tr("Localizable", "onboarding.intro.title1", fallback: "AI Expense Tracker & Budget Planner")
+      /// WalletWise with Apple Wallet
+      internal static let title2 = L10n.tr("Localizable", "onboarding.intro.title2", fallback: "WalletWise with Apple Wallet")
+    }
     internal enum Signin {
       /// Or continue with
       internal static let continueText = L10n.tr("Localizable", "onboarding.signin.continueText", fallback: "Or continue with")

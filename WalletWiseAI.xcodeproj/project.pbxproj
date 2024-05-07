@@ -33,6 +33,10 @@
 		F951983B2BE4E2100053F7F0 /* WalletWiseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951983A2BE4E2100053F7F0 /* WalletWiseTextField.swift */; };
 		F9F7AD312BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7AD302BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift */; };
 		F9F7AD332BE50CB900A10AB2 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7AD322BE50CB900A10AB2 /* SignUpView.swift */; };
+		F9F7AD352BEA3F4600A10AB2 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7AD342BEA3F4600A10AB2 /* IntroView.swift */; };
+		F9F7AD382BEA592400A10AB2 /* IntroPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7AD372BEA592400A10AB2 /* IntroPageView.swift */; };
+		F9F7AD3A2BEA5D0E00A10AB2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7AD392BEA5D0E00A10AB2 /* PageViewController.swift */; };
+		F9F7AD3C2BEA5D6900A10AB2 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7AD3B2BEA5D6900A10AB2 /* PageControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,10 @@
 		F951983A2BE4E2100053F7F0 /* WalletWiseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseTextField.swift; sourceTree = "<group>"; };
 		F9F7AD302BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseSecureTextField.swift; sourceTree = "<group>"; };
 		F9F7AD322BE50CB900A10AB2 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F9F7AD342BEA3F4600A10AB2 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		F9F7AD372BEA592400A10AB2 /* IntroPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPageView.swift; sourceTree = "<group>"; };
+		F9F7AD392BEA5D0E00A10AB2 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		F9F7AD3B2BEA5D6900A10AB2 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F9434DB82BEAB8C400463089 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F951982E2BE3F9CC0053F7F0 /* AuthView.swift */,
+				F95198332BE4C8000053F7F0 /* SignInView.swift */,
+				F9F7AD322BE50CB900A10AB2 /* SignUpView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		F95197DC2BE39D640053F7F0 = {
 			isa = PBXGroup;
 			children = (
@@ -150,10 +168,9 @@
 		F95198082BE3A12A0053F7F0 /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
+				F9434DB82BEAB8C400463089 /* Auth */,
+				F9F7AD362BEA58CF00A10AB2 /* Introduction */,
 				F95198092BE3A1430053F7F0 /* WelcomeView.swift */,
-				F951982E2BE3F9CC0053F7F0 /* AuthView.swift */,
-				F95198332BE4C8000053F7F0 /* SignInView.swift */,
-				F9F7AD322BE50CB900A10AB2 /* SignUpView.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -202,6 +219,8 @@
 			children = (
 				F95198392BE4E1E60053F7F0 /* TextFields */,
 				F95198312BE3FC9F0053F7F0 /* NavStackHandler.swift */,
+				F9F7AD392BEA5D0E00A10AB2 /* PageViewController.swift */,
+				F9F7AD3B2BEA5D6900A10AB2 /* PageControl.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -213,6 +232,15 @@
 				F9F7AD302BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift */,
 			);
 			path = TextFields;
+			sourceTree = "<group>";
+		};
+		F9F7AD362BEA58CF00A10AB2 /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				F9F7AD342BEA3F4600A10AB2 /* IntroView.swift */,
+				F9F7AD372BEA592400A10AB2 /* IntroPageView.swift */,
+			);
+			path = Introduction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,15 +349,19 @@
 				F9F7AD312BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift in Sources */,
 				F95198072BE3A0830053F7F0 /* RootView.swift in Sources */,
 				F95198322BE3FC9F0053F7F0 /* NavStackHandler.swift in Sources */,
+				F9F7AD3C2BEA5D6900A10AB2 /* PageControl.swift in Sources */,
 				F95198362BE4CD7A0053F7F0 /* RoundedCorner.swift in Sources */,
 				F951980A2BE3A1430053F7F0 /* WelcomeView.swift in Sources */,
 				F951981F2BE3B2600053F7F0 /* BlueButtonStyle.swift in Sources */,
 				F951980C2BE3A5E60053F7F0 /* SystemServices.swift in Sources */,
 				F95198212BE3BBC00053F7F0 /* BorderButtonStyle.swift in Sources */,
+				F9F7AD352BEA3F4600A10AB2 /* IntroView.swift in Sources */,
 				F951982F2BE3F9CC0053F7F0 /* AuthView.swift in Sources */,
+				F9F7AD3A2BEA5D0E00A10AB2 /* PageViewController.swift in Sources */,
 				F951981C2BE3B1D00053F7F0 /* Strings.swift in Sources */,
 				F951983B2BE4E2100053F7F0 /* WalletWiseTextField.swift in Sources */,
 				F9F7AD332BE50CB900A10AB2 /* SignUpView.swift in Sources */,
+				F9F7AD382BEA592400A10AB2 /* IntroPageView.swift in Sources */,
 				F95198342BE4C8000053F7F0 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

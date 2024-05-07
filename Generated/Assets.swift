@@ -31,6 +31,11 @@ internal enum Asset {
     internal static let primaryWhite = ColorAsset(name: "Color/PrimaryWhite")
   }
   internal enum OnBoarding {
+    internal enum Intro {
+      internal static let background = ImageAsset(name: "OnBoarding/Intro/background")
+      internal static let logo1 = ImageAsset(name: "OnBoarding/Intro/logo1")
+      internal static let logo2 = ImageAsset(name: "OnBoarding/Intro/logo2")
+    }
     internal static let line = ImageAsset(name: "OnBoarding/Line")
     internal static let appleIcon = ImageAsset(name: "OnBoarding/apple-icon")
     internal static let authBackground = ImageAsset(name: "OnBoarding/auth-background")

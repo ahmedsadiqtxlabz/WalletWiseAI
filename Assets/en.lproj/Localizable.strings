@@ -18,5 +18,12 @@
 "onboarding.signin.password" = "Password";
 "onboarding.signin.fullName" = "Full Name";
 "onboarding.signin.haveAccount" = "Already have an account?";
+"onboarding.intro.title1" = "AI Expense Tracker & Budget Planner";
+"onboarding.intro.title2" = "WalletWise with Apple Wallet";
+"onboarding.intro.detail1" = "WalletWise uses AI for personalized expense insights and recommendations based on spending patterns.";
+"onboarding.intro.detail2" = "WalletWise integrates with Apple Wallet for seamless transaction import, streamlining expense tracking.";
+"onboarding.intro.button1" = "Next";
+"onboarding.intro.button2" = "Get Started";
+
 
 

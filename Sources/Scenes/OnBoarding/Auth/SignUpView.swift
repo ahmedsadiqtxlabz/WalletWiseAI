@@ -12,6 +12,7 @@ struct SignUpView: View {
     @State var email = ""
     @State var password = ""
     @Binding var shouldSignIn: Bool
+    @Binding var goToIntro: Bool
     var body: some View {
         
         ZStack(alignment: .center) {
@@ -64,7 +65,7 @@ struct SignUpView: View {
     
     var signUpButton: some View {
         Button(action: {
-            
+            self.goToIntro = true
         }, label: {
             Text(L10n.Onboarding.Welcome.signup)
                 .modifier(BlueButtonStyle(state: .enabled))
@@ -154,5 +155,5 @@ struct SignUpView: View {
 }
 
 #Preview {
-    SignUpView(shouldSignIn: Binding.constant(false))
+    SignUpView(shouldSignIn: Binding.constant(false), goToIntro: Binding.constant(false))
 }

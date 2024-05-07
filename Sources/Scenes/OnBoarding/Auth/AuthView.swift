@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AuthView: View {
     @State var shouldSignIn: Bool
+    @State private var goToIntro = false
     var body: some View {
         ZStack(alignment: .center) {
             Image(uiImage: Asset.OnBoarding.authBackground.image)
@@ -18,17 +19,27 @@ struct AuthView: View {
             VStack(alignment: .center) {
                 Spacer()
                 if shouldSignIn {
-                    SignInView(shouldSignIn: $shouldSignIn)
+                    SignInView(shouldSignIn: $shouldSignIn, goToIntro: $goToIntro)
                         .frame(height: UIScreen.main.bounds.height - 200)
                 } else {
-                    SignUpView(shouldSignIn: $shouldSignIn)
+                    SignUpView(shouldSignIn: $shouldSignIn, goToIntro: $goToIntro)
                         .frame(height: UIScreen.main.bounds.height - 200)
                 }
+                links
             }
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
         .edgesIgnoringSafeArea(.all)
+    }
+}
+
+extension AuthView {
+    var links: some View {
+        Group {
+            NavigationLink(destination: IntroView(viewControllers: IntroInfo), isActive: self.$goToIntro) { EmptyView() }
+                .isDetailLink(false)
+        }
     }
 }
 

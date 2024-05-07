@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct SignInView: View {
+    
     @State var email = ""
     @State var password = ""
     @Binding var shouldSignIn: Bool
+    @Binding var goToIntro: Bool
+    
     var body: some View {
         ZStack(alignment: .center) {
             Rectangle()
@@ -68,7 +71,7 @@ struct SignInView: View {
     
     var signInButton: some View {
         Button(action: {
-            
+            self.goToIntro = true
         }, label: {
             Text(L10n.Onboarding.Welcome.signin)
                 .modifier(BlueButtonStyle(state: .enabled))
@@ -158,5 +161,5 @@ struct SignInView: View {
 }
 
 #Preview {
-    SignInView(shouldSignIn: Binding.constant(false))
+    SignInView(shouldSignIn: Binding.constant(false), goToIntro: Binding.constant(false))
 }
