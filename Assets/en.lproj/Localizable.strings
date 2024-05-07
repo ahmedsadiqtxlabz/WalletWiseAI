@@ -1,0 +1,22 @@
+//
+//  Localizable.strings
+//  WalletWiseAI
+//
+//  Created by Hannan Khan on 02/05/2024.
+//
+
+// MARK: - OnBoarding
+
+"onboarding.welcome.title" = "Welcome!";
+"onboarding.welcome.description" = "Introducing our AI-powered Expense Tracker and Budget Planner app.";
+"onboarding.welcome.signin" = "Sign In";
+"onboarding.welcome.signup" = "Sign Up";
+"onboarding.signin.noAccountText" = "Don't have an account?";
+"onboarding.signin.forgetPassword" = "Forgot password?";
+"onboarding.signin.continueText" = "Or continue with";
+"onboarding.signin.emailText" = "Email or Username";
+"onboarding.signin.password" = "Password";
+"onboarding.signin.fullName" = "Full Name";
+"onboarding.signin.haveAccount" = "Already have an account?";
+
+

@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F95197FA2BE39DE80053F7F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95197F72BE39DE80053F7F0 /* Assets.xcassets */; };
+		F95197FB2BE39DE80053F7F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95197F82BE39DE80053F7F0 /* Preview Assets.xcassets */; };
+		F95198002BE39E790053F7F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95197FF2BE39E790053F7F0 /* LaunchScreen.storyboard */; };
+		F95198022BE39F0B0053F7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95198012BE39F0B0053F7F0 /* AppDelegate.swift */; };
+		F95198042BE39FD60053F7F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95198032BE39FD60053F7F0 /* SceneDelegate.swift */; };
+		F95198072BE3A0830053F7F0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95198062BE3A0830053F7F0 /* RootView.swift */; };
+		F951980A2BE3A1430053F7F0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95198092BE3A1430053F7F0 /* WelcomeView.swift */; };
+		F951980C2BE3A5E60053F7F0 /* SystemServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951980B2BE3A5E60053F7F0 /* SystemServices.swift */; };
+		F95198172BE3AED60053F7F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F95198162BE3AED60053F7F0 /* Localizable.strings */; };
+		F951981B2BE3B1D00053F7F0 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95198192BE3B1D00053F7F0 /* Assets.swift */; };
+		F951981C2BE3B1D00053F7F0 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951981A2BE3B1D00053F7F0 /* Strings.swift */; };
+		F951981F2BE3B2600053F7F0 /* BlueButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951981E2BE3B2600053F7F0 /* BlueButtonStyle.swift */; };
+		F95198212BE3BBC00053F7F0 /* BorderButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95198202BE3BBC00053F7F0 /* BorderButtonStyle.swift */; };
+		F95198272BE3C4650053F7F0 /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F95198232BE3C4650053F7F0 /* SFProText-Medium.ttf */; };
+		F95198282BE3C4650053F7F0 /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F95198242BE3C4650053F7F0 /* SFProText-Bold.ttf */; };
+		F95198292BE3C4650053F7F0 /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F95198252BE3C4650053F7F0 /* SFProText-Regular.ttf */; };
+		F951982A2BE3C4650053F7F0 /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F95198262BE3C4650053F7F0 /* SFProText-Semibold.ttf */; };
+		F951982D2BE3C53A0053F7F0 /* Fonts+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951982C2BE3C53A0053F7F0 /* Fonts+Custom.swift */; };
+		F951982F2BE3F9CC0053F7F0 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951982E2BE3F9CC0053F7F0 /* AuthView.swift */; };
+		F95198322BE3FC9F0053F7F0 /* NavStackHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95198312BE3FC9F0053F7F0 /* NavStackHandler.swift */; };
+		F95198342BE4C8000053F7F0 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95198332BE4C8000053F7F0 /* SignInView.swift */; };
+		F95198362BE4CD7A0053F7F0 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95198352BE4CD7A0053F7F0 /* RoundedCorner.swift */; };
+		F95198382BE4CDB90053F7F0 /* View+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95198372BE4CDB90053F7F0 /* View+Corners.swift */; };
+		F951983B2BE4E2100053F7F0 /* WalletWiseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951983A2BE4E2100053F7F0 /* WalletWiseTextField.swift */; };
+		F9F7AD312BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7AD302BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift */; };
+		F9F7AD332BE50CB900A10AB2 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7AD322BE50CB900A10AB2 /* SignUpView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F95197E52BE39D640053F7F0 /* WalletWiseAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletWiseAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95197F72BE39DE80053F7F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F95197F82BE39DE80053F7F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F95197FF2BE39E790053F7F0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F95198012BE39F0B0053F7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F95198032BE39FD60053F7F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F95198052BE3A0190053F7F0 /* WalletWiseAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WalletWiseAI-Info.plist"; sourceTree = "<group>"; };
+		F95198062BE3A0830053F7F0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F95198092BE3A1430053F7F0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F951980B2BE3A5E60053F7F0 /* SystemServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemServices.swift; sourceTree = "<group>"; };
+		F95198152BE3AED60053F7F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F95198192BE3B1D00053F7F0 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		F951981A2BE3B1D00053F7F0 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		F951981E2BE3B2600053F7F0 /* BlueButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButtonStyle.swift; sourceTree = "<group>"; };
+		F95198202BE3BBC00053F7F0 /* BorderButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButtonStyle.swift; sourceTree = "<group>"; };
+		F95198232BE3C4650053F7F0 /* SFProText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Medium.ttf"; sourceTree = "<group>"; };
+		F95198242BE3C4650053F7F0 /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Bold.ttf"; sourceTree = "<group>"; };
+		F95198252BE3C4650053F7F0 /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		F95198262BE3C4650053F7F0 /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		F951982C2BE3C53A0053F7F0 /* Fonts+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Custom.swift"; sourceTree = "<group>"; };
+		F951982E2BE3F9CC0053F7F0 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		F95198312BE3FC9F0053F7F0 /* NavStackHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackHandler.swift; sourceTree = "<group>"; };
+		F95198332BE4C8000053F7F0 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		F95198352BE4CD7A0053F7F0 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		F95198372BE4CDB90053F7F0 /* View+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Corners.swift"; sourceTree = "<group>"; };
+		F951983A2BE4E2100053F7F0 /* WalletWiseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseTextField.swift; sourceTree = "<group>"; };
+		F9F7AD302BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseSecureTextField.swift; sourceTree = "<group>"; };
+		F9F7AD322BE50CB900A10AB2 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F95197E22BE39D640053F7F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F95197DC2BE39D640053F7F0 = {
+			isa = PBXGroup;
+			children = (
+				F95198222BE3C44E0053F7F0 /* Fonts */,
+				F95198052BE3A0190053F7F0 /* WalletWiseAI-Info.plist */,
+				F95197FD2BE39E0B0053F7F0 /* Sources */,
+				F95197FC2BE39E010053F7F0 /* Services */,
+				F95197F62BE39DB90053F7F0 /* Assets */,
+				F95198182BE3AFE10053F7F0 /* Generated */,
+				F95197E62BE39D640053F7F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F95197E62BE39D640053F7F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F95197E52BE39D640053F7F0 /* WalletWiseAI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F95197F62BE39DB90053F7F0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F95197F72BE39DE80053F7F0 /* Assets.xcassets */,
+				F95197F92BE39DE80053F7F0 /* Preview Content */,
+				F95197FF2BE39E790053F7F0 /* LaunchScreen.storyboard */,
+				F95198162BE3AED60053F7F0 /* Localizable.strings */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F95197F92BE39DE80053F7F0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F95197F82BE39DE80053F7F0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F95197FC2BE39E010053F7F0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F951980B2BE3A5E60053F7F0 /* SystemServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F95197FD2BE39E0B0053F7F0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F95198302BE3FC7B0053F7F0 /* CustomViews */,
+				F951982B2BE3C5080053F7F0 /* Extensions */,
+				F951981D2BE3B2460053F7F0 /* Styles */,
+				F95197FE2BE39E180053F7F0 /* Scenes */,
+				F95198032BE39FD60053F7F0 /* SceneDelegate.swift */,
+				F95198012BE39F0B0053F7F0 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F95197FE2BE39E180053F7F0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F95198082BE3A12A0053F7F0 /* OnBoarding */,
+				F95198062BE3A0830053F7F0 /* RootView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F95198082BE3A12A0053F7F0 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				F95198092BE3A1430053F7F0 /* WelcomeView.swift */,
+				F951982E2BE3F9CC0053F7F0 /* AuthView.swift */,
+				F95198332BE4C8000053F7F0 /* SignInView.swift */,
+				F9F7AD322BE50CB900A10AB2 /* SignUpView.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		F95198182BE3AFE10053F7F0 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				F95198192BE3B1D00053F7F0 /* Assets.swift */,
+				F951981A2BE3B1D00053F7F0 /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		F951981D2BE3B2460053F7F0 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F951981E2BE3B2600053F7F0 /* BlueButtonStyle.swift */,
+				F95198202BE3BBC00053F7F0 /* BorderButtonStyle.swift */,
+				F95198352BE4CD7A0053F7F0 /* RoundedCorner.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		F95198222BE3C44E0053F7F0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F95198242BE3C4650053F7F0 /* SFProText-Bold.ttf */,
+				F95198232BE3C4650053F7F0 /* SFProText-Medium.ttf */,
+				F95198252BE3C4650053F7F0 /* SFProText-Regular.ttf */,
+				F95198262BE3C4650053F7F0 /* SFProText-Semibold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F951982B2BE3C5080053F7F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F951982C2BE3C53A0053F7F0 /* Fonts+Custom.swift */,
+				F95198372BE4CDB90053F7F0 /* View+Corners.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F95198302BE3FC7B0053F7F0 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F95198392BE4E1E60053F7F0 /* TextFields */,
+				F95198312BE3FC9F0053F7F0 /* NavStackHandler.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F95198392BE4E1E60053F7F0 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				F951983A2BE4E2100053F7F0 /* WalletWiseTextField.swift */,
+				F9F7AD302BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F95197E42BE39D640053F7F0 /* WalletWiseAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F95197F32BE39D660053F7F0 /* Build configuration list for PBXNativeTarget "WalletWiseAI" */;
+			buildPhases = (
+				F95197E12BE39D640053F7F0 /* Sources */,
+				F95197E22BE39D640053F7F0 /* Frameworks */,
+				F95197E32BE39D640053F7F0 /* Resources */,
+				F951980D2BE3A6CF0053F7F0 /* SwiftGen */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WalletWiseAI;
+			productName = WalletWiseAI;
+			productReference = F95197E52BE39D640053F7F0 /* WalletWiseAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F95197DD2BE39D640053F7F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					F95197E42BE39D640053F7F0 = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
+					};
+				};
+			};
+			buildConfigurationList = F95197E02BE39D640053F7F0 /* Build configuration list for PBXProject "WalletWiseAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F95197DC2BE39D640053F7F0;
+			productRefGroup = F95197E62BE39D640053F7F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F95197E42BE39D640053F7F0 /* WalletWiseAI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F95197E32BE39D640053F7F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95198002BE39E790053F7F0 /* LaunchScreen.storyboard in Resources */,
+				F95198282BE3C4650053F7F0 /* SFProText-Bold.ttf in Resources */,
+				F95198292BE3C4650053F7F0 /* SFProText-Regular.ttf in Resources */,
+				F95198172BE3AED60053F7F0 /* Localizable.strings in Resources */,
+				F95197FB2BE39DE80053F7F0 /* Preview Assets.xcassets in Resources */,
+				F951982A2BE3C4650053F7F0 /* SFProText-Semibold.ttf in Resources */,
+				F95197FA2BE39DE80053F7F0 /* Assets.xcassets in Resources */,
+				F95198272BE3C4650053F7F0 /* SFProText-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F951980D2BE3A6CF0053F7F0 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen config run --config ${PROJECT_DIR}/swiftgen.yml\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F95197E12BE39D640053F7F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95198022BE39F0B0053F7F0 /* AppDelegate.swift in Sources */,
+				F951982D2BE3C53A0053F7F0 /* Fonts+Custom.swift in Sources */,
+				F95198042BE39FD60053F7F0 /* SceneDelegate.swift in Sources */,
+				F951981B2BE3B1D00053F7F0 /* Assets.swift in Sources */,
+				F95198382BE4CDB90053F7F0 /* View+Corners.swift in Sources */,
+				F9F7AD312BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift in Sources */,
+				F95198072BE3A0830053F7F0 /* RootView.swift in Sources */,
+				F95198322BE3FC9F0053F7F0 /* NavStackHandler.swift in Sources */,
+				F95198362BE4CD7A0053F7F0 /* RoundedCorner.swift in Sources */,
+				F951980A2BE3A1430053F7F0 /* WelcomeView.swift in Sources */,
+				F951981F2BE3B2600053F7F0 /* BlueButtonStyle.swift in Sources */,
+				F951980C2BE3A5E60053F7F0 /* SystemServices.swift in Sources */,
+				F95198212BE3BBC00053F7F0 /* BorderButtonStyle.swift in Sources */,
+				F951982F2BE3F9CC0053F7F0 /* AuthView.swift in Sources */,
+				F951981C2BE3B1D00053F7F0 /* Strings.swift in Sources */,
+				F951983B2BE4E2100053F7F0 /* WalletWiseTextField.swift in Sources */,
+				F9F7AD332BE50CB900A10AB2 /* SignUpView.swift in Sources */,
+				F95198342BE4C8000053F7F0 /* SignInView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F95198162BE3AED60053F7F0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F95198152BE3AED60053F7F0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F95197F12BE39D660053F7F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F95197F22BE39D660053F7F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F95197F42BE39D660053F7F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = KY6X567SR3;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WalletWiseAI-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.txlabz.WalletWiseAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F95197F52BE39D660053F7F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = KY6X567SR3;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WalletWiseAI-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.txlabz.WalletWiseAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F95197E02BE39D640053F7F0 /* Build configuration list for PBXProject "WalletWiseAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F95197F12BE39D660053F7F0 /* Debug */,
+				F95197F22BE39D660053F7F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F95197F32BE39D660053F7F0 /* Build configuration list for PBXNativeTarget "WalletWiseAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F95197F42BE39D660053F7F0 /* Debug */,
+				F95197F52BE39D660053F7F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F95197DD2BE39D640053F7F0 /* Project object */;
+}
