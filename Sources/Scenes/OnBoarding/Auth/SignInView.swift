@@ -17,7 +17,7 @@ struct SignInView: View {
     var body: some View {
         ZStack(alignment: .center) {
             Rectangle()
-                .foregroundColor(Color(Asset.Color.primaryLightGray.color))
+                .foregroundColor(Color(Asset.Colors.primaryLightGray.color))
                 .cornerRadius(60, corners: [.topRight])
             VStack(alignment: .center, spacing: 30) {
                 titleView
@@ -62,7 +62,7 @@ struct SignInView: View {
                     
                 }, label: {
                     Text(L10n.Onboarding.Signin.forgetPassword)
-                        .foregroundColor(Color(Asset.Color.primaryBlue.color))
+                        .foregroundColor(Color(Asset.Colors.primaryBlue.color))
                         .font(Font.SFPro.bold(size: 15))
                 })
             }

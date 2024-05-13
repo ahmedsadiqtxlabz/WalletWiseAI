@@ -12,7 +12,7 @@ struct SystemServices: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-            .accentColor(.blue)
+            .accentColor(Color(Asset.Colors.primaryBlue.color))
     }
 }
 

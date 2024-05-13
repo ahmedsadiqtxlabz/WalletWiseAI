@@ -25,5 +25,21 @@
 "onboarding.intro.button1" = "Next";
 "onboarding.intro.button2" = "Get Started";
 
+// Mark: - TabBar
+
+"tabbar.title.1" = "Home";
+"tabbar.title.2" = "AI Insights";
+"tabbar.title.3" = "Budget";
+"tabbar.title.4" = "Account";
+
+// MARK: - Home
+
+"home.totalBalance" = "Total Balance";
+"home.availableFunds" = "Available Funds";
+"home.summaryTitle" = "Monthly Summary";
+"home.summaryExpenses" = "Expenses";
+"home.summaryIncome" = "Income";
+"home.recentTransactions" = "Recent Transactions";
+
 
 

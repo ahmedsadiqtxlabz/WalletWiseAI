@@ -21,9 +21,9 @@ struct BorderButtonStyle: ViewModifier {
     content
       .frame(minWidth: 0, maxWidth: .infinity)
       .padding()
-      .foregroundColor(Color(Asset.Color.primaryWhite.color))
+      .foregroundColor(Color(Asset.Colors.primaryWhite.color))
       .background(Color.clear)
       .cornerRadius(10)
-      .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(Asset.Color.primaryWhite.color), lineWidth: 2))
+      .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(Asset.Colors.primaryWhite.color), lineWidth: 2))
   }
 }

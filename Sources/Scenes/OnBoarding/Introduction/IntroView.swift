@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Combine
 
 struct IntroductionInfo {
     let title: String
@@ -39,27 +38,10 @@ let IntroInfo = [
     )
 }
 
-class TimerHelper: ObservableObject {
-    
-    static var shared = TimerHelper()
-    var currentTimePublisher: Timer.TimerPublisher
-    var cancellable = Set<AnyCancellable>()
-    
-    init() {
-        currentTimePublisher = Timer.publish(every: 3, on: .main, in: .common)
-    }
-    
-    // Only works on startup
-    func startTimer() {
-        currentTimePublisher
-            .connect()
-            .store(in: &cancellable)
-    }
-}
-
 struct IntroView<Page: View>: View {
     
     @State private var currentPage = 0
+    @State private var goToHome = false
     var viewControllers: [UIHostingController<Page>]
     
     var body: some View {
@@ -78,19 +60,27 @@ struct IntroView<Page: View>: View {
                     })
                 } else {
                     Button(action: {
-                        
+                        self.goToHome = true
                     }, label: {
                         Text(L10n.Onboarding.Intro.button2)
                             .font(Font.SFPro.bold(size: 17))
                             .modifier(BlueButtonStyle(state: .enabled))
                     })
                 }
+                links
             }
             .padding(EdgeInsets(top: 0, leading: 20, bottom: 30, trailing: 20))
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
         .edgesIgnoringSafeArea(.all)
+    }
+}
+
+extension IntroView {
+    private var links: some View {
+        NavigationLink(destination: MainView(), isActive: self.$goToHome) { EmptyView() }
+            .isDetailLink(false)
     }
 }
 

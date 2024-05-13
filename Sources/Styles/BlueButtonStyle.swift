@@ -21,8 +21,8 @@ struct BlueButtonStyle: ViewModifier {
     content
       .frame(minWidth: 0, maxWidth: .infinity)
       .padding()
-      .foregroundColor(Color(Asset.Color.primaryWhite.color))
-      .background(Color(Asset.Color.primaryBlue.color))
+      .foregroundColor(Color(Asset.Colors.primaryWhite.color))
+      .background(Color(Asset.Colors.primaryBlue.color))
       .cornerRadius(10)
   }
 }

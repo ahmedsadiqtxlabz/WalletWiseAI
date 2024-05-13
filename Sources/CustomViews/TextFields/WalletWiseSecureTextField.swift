@@ -27,7 +27,7 @@ struct WalletWiseSecureTextField: View {
                     .font(Font.SFPro.regular(size: 16))
                     .frame(height: 45)
             }
-            .background(Color(Asset.Color.primaryWhite.color))
+            .background(Color(Asset.Colors.primaryWhite.color))
             .cornerRadius(10)
         }
 }

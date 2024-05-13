@@ -10,6 +10,20 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum Home {
+    /// Available Funds
+    internal static let availableFunds = L10n.tr("Localizable", "home.availableFunds", fallback: "Available Funds")
+    /// Recent Transactions
+    internal static let recentTransactions = L10n.tr("Localizable", "home.recentTransactions", fallback: "Recent Transactions")
+    /// Expenses
+    internal static let summaryExpenses = L10n.tr("Localizable", "home.summaryExpenses", fallback: "Expenses")
+    /// Income
+    internal static let summaryIncome = L10n.tr("Localizable", "home.summaryIncome", fallback: "Income")
+    /// Monthly Summary
+    internal static let summaryTitle = L10n.tr("Localizable", "home.summaryTitle", fallback: "Monthly Summary")
+    /// Total Balance
+    internal static let totalBalance = L10n.tr("Localizable", "home.totalBalance", fallback: "Total Balance")
+  }
   internal enum Onboarding {
     internal enum Intro {
       /// Next
@@ -50,6 +64,18 @@ internal enum L10n {
       internal static let signup = L10n.tr("Localizable", "onboarding.welcome.signup", fallback: "Sign Up")
       /// Welcome!
       internal static let title = L10n.tr("Localizable", "onboarding.welcome.title", fallback: "Welcome!")
+    }
+  }
+  internal enum Tabbar {
+    internal enum Title {
+      /// Home
+      internal static let _1 = L10n.tr("Localizable", "tabbar.title.1", fallback: "Home")
+      /// AI Insights
+      internal static let _2 = L10n.tr("Localizable", "tabbar.title.2", fallback: "AI Insights")
+      /// Budget
+      internal static let _3 = L10n.tr("Localizable", "tabbar.title.3", fallback: "Budget")
+      /// Account
+      internal static let _4 = L10n.tr("Localizable", "tabbar.title.4", fallback: "Account")
     }
   }
 }

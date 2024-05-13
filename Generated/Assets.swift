@@ -25,10 +25,20 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
   internal static let accentColor = ColorAsset(name: "AccentColor")
-  internal enum Color {
-    internal static let primaryBlue = ColorAsset(name: "Color/PrimaryBlue")
-    internal static let primaryLightGray = ColorAsset(name: "Color/PrimaryLightGray")
-    internal static let primaryWhite = ColorAsset(name: "Color/PrimaryWhite")
+  internal enum Colors {
+    internal static let primaryBlue = ColorAsset(name: "Colors/PrimaryBlue")
+    internal static let primaryLightGray = ColorAsset(name: "Colors/PrimaryLightGray")
+    internal static let primaryWhite = ColorAsset(name: "Colors/PrimaryWhite")
+    internal static let heading = ColorAsset(name: "Colors/heading")
+    internal static let subheading = ColorAsset(name: "Colors/subheading")
+  }
+  internal enum Home {
+    internal static let homeExpenseIcon = ImageAsset(name: "Home/home-expense-icon")
+    internal static let homeIncomeIcon = ImageAsset(name: "Home/home-income-icon")
+    internal static let notificationIcon = ImageAsset(name: "Home/notification-icon")
+    internal static let transactionForwardArrow = ImageAsset(name: "Home/transaction-forward-arrow")
+    internal static let transactionLogo = ImageAsset(name: "Home/transaction-logo")
+    internal static let userPlaceholder = ImageAsset(name: "Home/user-placeholder")
   }
   internal enum OnBoarding {
     internal enum Intro {
@@ -45,6 +55,18 @@ internal enum Asset {
     internal static let passwordIcon = ImageAsset(name: "OnBoarding/password-icon")
     internal static let usernameIcon = ImageAsset(name: "OnBoarding/username-icon")
     internal static let welcomeBackground = ImageAsset(name: "OnBoarding/welcome-background")
+  }
+  internal enum TabBar {
+    internal static let budgetSelected = ImageAsset(name: "TabBar/budget-selected")
+    internal static let budget = ImageAsset(name: "TabBar/budget")
+    internal static let floatAddButton = ImageAsset(name: "TabBar/float-add-button")
+    internal static let homeSelected = ImageAsset(name: "TabBar/home-selected")
+    internal static let home = ImageAsset(name: "TabBar/home")
+    internal static let insightsSelected = ImageAsset(name: "TabBar/insights-selected")
+    internal static let insights = ImageAsset(name: "TabBar/insights")
+    internal static let tabbarBackground = ImageAsset(name: "TabBar/tabbar-background")
+    internal static let userSelected = ImageAsset(name: "TabBar/user-selected")
+    internal static let user = ImageAsset(name: "TabBar/user")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

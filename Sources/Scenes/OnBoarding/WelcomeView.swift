@@ -36,14 +36,14 @@ struct WelcomeView: View {
                 HStack {
                     Text(L10n.Onboarding.Welcome.title)
                         .font(Font.SFPro.bold(size: 40))
-                        .foregroundColor(Color(Asset.Color.primaryWhite.color))
+                        .foregroundColor(Color(Asset.Colors.primaryWhite.color))
                         .multilineTextAlignment(.leading)
                     Spacer()
                 }
                 HStack {
                     Text(L10n.Onboarding.Welcome.description)
                         .font(Font.SFPro.regular(size: 17))
-                        .foregroundColor(Color(Asset.Color.primaryWhite.color))
+                        .foregroundColor(Color(Asset.Colors.primaryWhite.color))
                         .multilineTextAlignment(.leading)
                     Spacer()
                 }

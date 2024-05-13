@@ -17,7 +17,7 @@ struct SignUpView: View {
         
         ZStack(alignment: .center) {
             Rectangle()
-                .foregroundColor(Color(Asset.Color.primaryLightGray.color))
+                .foregroundColor(Color(Asset.Colors.primaryLightGray.color))
                 .cornerRadius(60, corners: [.topRight])
             VStack(alignment: .center, spacing: 30) {
                 titleView
