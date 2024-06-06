@@ -22,7 +22,8 @@ struct AuthView: View {
                     SignInView(shouldSignIn: $shouldSignIn, goToIntro: $goToIntro)
                         .frame(height: UIScreen.main.bounds.height - 200)
                 } else {
-                    SignUpView(shouldSignIn: $shouldSignIn, goToIntro: $goToIntro)
+                    let viewModel = SignUpViewModel()
+                    SignUpView(shouldSignIn: $shouldSignIn, goToIntro: $goToIntro, viewModel: viewModel)
                         .frame(height: UIScreen.main.bounds.height - 200)
                 }
                 links

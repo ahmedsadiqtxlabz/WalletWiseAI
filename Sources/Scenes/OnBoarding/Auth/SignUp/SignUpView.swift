@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct SignUpView: View {
-    @State var fullName = ""
-    @State var email = ""
-    @State var password = ""
     @Binding var shouldSignIn: Bool
     @Binding var goToIntro: Bool
+    @State var isFormValid: Bool = false
+    
+    @ObservedObject var viewModel: SignUpViewModel
+    
     var body: some View {
         
         ZStack(alignment: .center) {
@@ -30,6 +31,9 @@ struct SignUpView: View {
                 noAccountView
             }
             .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 30))
+            if viewModel.showMessage {
+                MessageView(showMessage: $viewModel.showMessage, message: viewModel.errorMessage, isError: true)
+            }
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -48,15 +52,15 @@ struct SignUpView: View {
         VStack(alignment: .center, spacing: 20) {
             Group {
                 WalletWiseTextField(
-                    text: $fullName, placeholder: L10n.Onboarding.Signin.fullName,
+                    text: $viewModel.fullName, placeholder: L10n.Onboarding.Signin.fullName,
                     leadingImage: Asset.OnBoarding.usernameIcon.image,
                     keyboardType: .default)
                 WalletWiseTextField(
-                    text: $email, placeholder: L10n.Onboarding.Signin.emailText,
+                    text: $viewModel.email, placeholder: L10n.Onboarding.Signin.emailText,
                     leadingImage: Asset.OnBoarding.emailIcon.image,
                     keyboardType: .default)
                 WalletWiseSecureTextField(
-                    text: $password, placeholder: L10n.Onboarding.Signin.password,
+                    text: $viewModel.password, placeholder: L10n.Onboarding.Signin.password,
                     leadingImage: Asset.OnBoarding.passwordIcon.image,
                     keyboardType: .default)
             }
@@ -65,7 +69,9 @@ struct SignUpView: View {
     
     var signUpButton: some View {
         Button(action: {
-            self.goToIntro = true
+            if viewModel.isValid() {
+                self.goToIntro = true
+            }
         }, label: {
             Text(L10n.Onboarding.Welcome.signup)
                 .modifier(BlueButtonStyle(state: .enabled))
@@ -155,5 +161,8 @@ struct SignUpView: View {
 }
 
 #Preview {
-    SignUpView(shouldSignIn: Binding.constant(false), goToIntro: Binding.constant(false))
+    SignUpView(
+        shouldSignIn: Binding.constant(false),
+        goToIntro: Binding.constant(false),
+        viewModel: SignUpViewModel())
 }

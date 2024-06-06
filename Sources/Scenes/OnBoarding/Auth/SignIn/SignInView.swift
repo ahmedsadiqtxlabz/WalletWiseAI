@@ -9,10 +9,10 @@ import SwiftUI
 
 struct SignInView: View {
     
-    @State var email = ""
-    @State var password = ""
     @Binding var shouldSignIn: Bool
     @Binding var goToIntro: Bool
+    
+    @ObservedObject var viewModel: SignInViewModel
     
     var body: some View {
         ZStack(alignment: .center) {
@@ -30,6 +30,9 @@ struct SignInView: View {
                 noAccountView
             }
             .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 30))
+            if viewModel.showMessage {
+                MessageView(showMessage: $viewModel.showMessage, message: viewModel.errorMessage, isError: true)
+            }
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -48,11 +51,11 @@ struct SignInView: View {
         VStack(alignment: .center, spacing: 20) {
             Group {
                 WalletWiseTextField(
-                    text: $email, placeholder: L10n.Onboarding.Signin.emailText,
+                    text: $viewModel.email, placeholder: L10n.Onboarding.Signin.emailText,
                     leadingImage: Asset.OnBoarding.emailIcon.image,
                     keyboardType: .default)
                 WalletWiseSecureTextField(
-                    text: $password, placeholder: L10n.Onboarding.Signin.password,
+                    text: $viewModel.password, placeholder: L10n.Onboarding.Signin.password,
                     leadingImage: Asset.OnBoarding.passwordIcon.image,
                     keyboardType: .default)
             }
@@ -71,7 +74,9 @@ struct SignInView: View {
     
     var signInButton: some View {
         Button(action: {
-            self.goToIntro = true
+            if viewModel.isValid() {
+                self.goToIntro = true
+            }
         }, label: {
             Text(L10n.Onboarding.Welcome.signin)
                 .modifier(BlueButtonStyle(state: .enabled))
@@ -161,5 +166,7 @@ struct SignInView: View {
 }
 
 #Preview {
-    SignInView(shouldSignIn: Binding.constant(false), goToIntro: Binding.constant(false))
+    SignInView(
+        shouldSignIn: Binding.constant(false),
+        goToIntro: Binding.constant(false), viewModel: SignInViewModel())
 }

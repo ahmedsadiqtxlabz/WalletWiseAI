@@ -42,8 +42,8 @@ internal enum L10n {
     internal enum Signin {
       /// Or continue with
       internal static let continueText = L10n.tr("Localizable", "onboarding.signin.continueText", fallback: "Or continue with")
-      /// Email or Username
-      internal static let emailText = L10n.tr("Localizable", "onboarding.signin.emailText", fallback: "Email or Username")
+      /// Email
+      internal static let emailText = L10n.tr("Localizable", "onboarding.signin.emailText", fallback: "Email")
       /// Forgot password?
       internal static let forgetPassword = L10n.tr("Localizable", "onboarding.signin.forgetPassword", fallback: "Forgot password?")
       /// Full Name
@@ -54,6 +54,18 @@ internal enum L10n {
       internal static let noAccountText = L10n.tr("Localizable", "onboarding.signin.noAccountText", fallback: "Don't have an account?")
       /// Password
       internal static let password = L10n.tr("Localizable", "onboarding.signin.password", fallback: "Password")
+    }
+    internal enum Validations {
+      /// Email cannot be empty.
+      internal static let emptyEmail = L10n.tr("Localizable", "onboarding.validations.emptyEmail", fallback: "Email cannot be empty.")
+      /// Password cannot be empty.
+      internal static let emptyPassword = L10n.tr("Localizable", "onboarding.validations.emptyPassword", fallback: "Password cannot be empty.")
+      /// Full name cannot be empty.
+      internal static let fullName = L10n.tr("Localizable", "onboarding.validations.fullName", fallback: "Full name cannot be empty.")
+      /// Email is not valid.
+      internal static let invalidEmail = L10n.tr("Localizable", "onboarding.validations.invalidEmail", fallback: "Email is not valid.")
+      /// Password must be at least 8 characters long.
+      internal static let invalidPassword = L10n.tr("Localizable", "onboarding.validations.invalidPassword", fallback: "Password must be at least 8 characters long.")
     }
     internal enum Welcome {
       /// Introducing our AI-powered Expense Tracker and Budget Planner app.

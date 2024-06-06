@@ -14,7 +14,7 @@
 "onboarding.signin.noAccountText" = "Don't have an account?";
 "onboarding.signin.forgetPassword" = "Forgot password?";
 "onboarding.signin.continueText" = "Or continue with";
-"onboarding.signin.emailText" = "Email or Username";
+"onboarding.signin.emailText" = "Email";
 "onboarding.signin.password" = "Password";
 "onboarding.signin.fullName" = "Full Name";
 "onboarding.signin.haveAccount" = "Already have an account?";
@@ -24,6 +24,11 @@
 "onboarding.intro.detail2" = "WalletWise integrates with Apple Wallet for seamless transaction import, streamlining expense tracking.";
 "onboarding.intro.button1" = "Next";
 "onboarding.intro.button2" = "Get Started";
+"onboarding.validations.fullName" = "Full name cannot be empty.";
+"onboarding.validations.emptyEmail" = "Email cannot be empty.";
+"onboarding.validations.invalidEmail" = "Email is not valid.";
+"onboarding.validations.emptyPassword" = "Password cannot be empty.";
+"onboarding.validations.invalidPassword" = "Password must be at least 8 characters long.";
 
 // Mark: - TabBar
 
