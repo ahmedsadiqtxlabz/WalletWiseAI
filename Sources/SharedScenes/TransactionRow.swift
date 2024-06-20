@@ -30,7 +30,7 @@ struct TransactionRow: View {
                     .foregroundColor(Color(Asset.Colors.heading.color))
                     .font(Font.SFPro.semiBold(size: 20))
                     .padding(.trailing, 10)
-                Image(uiImage: Asset.Home.transactionForwardArrow.image)
+                Image(uiImage: Asset.forwardArrow.image)
             }
             .padding()
         }

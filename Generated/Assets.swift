@@ -25,10 +25,16 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
   internal static let accentColor = ColorAsset(name: "AccentColor")
+  internal enum Accounts {
+    internal static let premiumPlanIcon = ImageAsset(name: "Accounts/premiumPlan-icon")
+    internal static let settingsIcon = ImageAsset(name: "Accounts/settings-icon")
+    internal static let transactionHistoryIcon = ImageAsset(name: "Accounts/transactionHistory-icon")
+  }
   internal enum Colors {
     internal static let primaryBlue = ColorAsset(name: "Colors/PrimaryBlue")
     internal static let primaryLightGray = ColorAsset(name: "Colors/PrimaryLightGray")
     internal static let primaryWhite = ColorAsset(name: "Colors/PrimaryWhite")
+    internal static let accountBlue = ColorAsset(name: "Colors/accountBlue")
     internal static let disabled = ColorAsset(name: "Colors/disabled")
     internal static let heading = ColorAsset(name: "Colors/heading")
     internal static let subheading = ColorAsset(name: "Colors/subheading")
@@ -37,7 +43,6 @@ internal enum Asset {
     internal static let homeExpenseIcon = ImageAsset(name: "Home/home-expense-icon")
     internal static let homeIncomeIcon = ImageAsset(name: "Home/home-income-icon")
     internal static let notificationIcon = ImageAsset(name: "Home/notification-icon")
-    internal static let transactionForwardArrow = ImageAsset(name: "Home/transaction-forward-arrow")
     internal static let transactionLogo = ImageAsset(name: "Home/transaction-logo")
     internal static let userPlaceholder = ImageAsset(name: "Home/user-placeholder")
   }
@@ -69,6 +74,11 @@ internal enum Asset {
     internal static let userSelected = ImageAsset(name: "TabBar/user-selected")
     internal static let user = ImageAsset(name: "TabBar/user")
   }
+  internal static let backArrow = ImageAsset(name: "back-arrow")
+  internal static let calendar = ImageAsset(name: "calendar")
+  internal static let filterIcon = ImageAsset(name: "filter-icon")
+  internal static let forwardArrow = ImageAsset(name: "forward-arrow")
+  internal static let walletIcon = ImageAsset(name: "wallet-icon")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

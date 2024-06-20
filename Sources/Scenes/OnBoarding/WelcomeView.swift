@@ -16,7 +16,7 @@ struct WelcomeView: View {
             ZStack(alignment: .center) {
                 Image(uiImage: Asset.OnBoarding.welcomeBackground.image)
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
+                    .aspectRatio(contentMode: .fit)
                 VStack(alignment: .center, spacing: 15) {
                     Spacer()
                     textViews
@@ -29,6 +29,13 @@ struct WelcomeView: View {
             .edgesIgnoringSafeArea(.all)
         }
     }
+}
+
+#Preview {
+    WelcomeView()
+}
+
+extension WelcomeView {
     
     var textViews: some View {
         Group {
@@ -74,13 +81,7 @@ struct WelcomeView: View {
             
         })
     }
-}
-
-#Preview {
-    WelcomeView()
-}
-
-extension WelcomeView {
+    
     var links: some View {
         Group {
             NavigationLink(destination: AuthView(shouldSignIn: self.shouldSignIn), isActive: self.$goToAuth) { EmptyView() }

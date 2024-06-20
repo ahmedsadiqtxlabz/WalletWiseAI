@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 class SignUpViewModel: ObservableObject {
     private var disposables = Subscriptions()
@@ -45,5 +46,20 @@ class SignUpViewModel: ObservableObject {
             return false
         }
         return true
+    }
+    
+    func signUp() {
+        SystemServices.authentication.signUp(email: email, name: fullName, password: password)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    print("Success")
+                case .failure(let error):
+                    print("Error: \(error.localizedDescription)")
+                }
+            }, receiveValue: {
+                print("Value Received")
+            })
+            .store(in: &disposables)
     }
 }

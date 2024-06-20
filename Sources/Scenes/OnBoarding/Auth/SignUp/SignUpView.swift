@@ -54,11 +54,11 @@ struct SignUpView: View {
                 WalletWiseTextField(
                     text: $viewModel.fullName, placeholder: L10n.Onboarding.Signin.fullName,
                     leadingImage: Asset.OnBoarding.usernameIcon.image,
-                    keyboardType: .default)
+                    keyboardType: .default, capitalization: .words)
                 WalletWiseTextField(
                     text: $viewModel.email, placeholder: L10n.Onboarding.Signin.emailText,
                     leadingImage: Asset.OnBoarding.emailIcon.image,
-                    keyboardType: .default)
+                    keyboardType: .default, capitalization: .none)
                 WalletWiseSecureTextField(
                     text: $viewModel.password, placeholder: L10n.Onboarding.Signin.password,
                     leadingImage: Asset.OnBoarding.passwordIcon.image,
@@ -70,7 +70,8 @@ struct SignUpView: View {
     var signUpButton: some View {
         Button(action: {
             if viewModel.isValid() {
-                self.goToIntro = true
+//                self.goToIntro = true
+                viewModel.signUp()
             }
         }, label: {
             Text(L10n.Onboarding.Welcome.signup)

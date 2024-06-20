@@ -19,7 +19,8 @@ struct AuthView: View {
             VStack(alignment: .center) {
                 Spacer()
                 if shouldSignIn {
-                    SignInView(shouldSignIn: $shouldSignIn, goToIntro: $goToIntro)
+                    let viewModel = SignInViewModel()
+                    SignInView(shouldSignIn: $shouldSignIn, goToIntro: $goToIntro, viewModel: viewModel)
                         .frame(height: UIScreen.main.bounds.height - 200)
                 } else {
                     let viewModel = SignUpViewModel()

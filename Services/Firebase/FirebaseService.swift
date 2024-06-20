@@ -2,17 +2,14 @@
 //  FirebaseService.swift
 //  WalletWiseAI
 //
-//  Created by Hannan Khan on 04/06/2024.
+//  Created by Hannan Khan on 06/06/2024.
 //
 
 import Foundation
-import FirebaseCore
-import FirebaseAuth
-import Combine
+import Firebase
 
 final class FirebaseService: NSObject, ObservableObject {
-    
     func initialiseFirebase() {
-      FirebaseApp.configure()
+        FirebaseApp.configure()
     }
 }

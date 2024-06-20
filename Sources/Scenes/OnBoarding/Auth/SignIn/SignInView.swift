@@ -53,7 +53,7 @@ struct SignInView: View {
                 WalletWiseTextField(
                     text: $viewModel.email, placeholder: L10n.Onboarding.Signin.emailText,
                     leadingImage: Asset.OnBoarding.emailIcon.image,
-                    keyboardType: .default)
+                    keyboardType: .default, capitalization: .none)
                 WalletWiseSecureTextField(
                     text: $viewModel.password, placeholder: L10n.Onboarding.Signin.password,
                     leadingImage: Asset.OnBoarding.passwordIcon.image,
@@ -74,9 +74,7 @@ struct SignInView: View {
     
     var signInButton: some View {
         Button(action: {
-            if viewModel.isValid() {
-                self.goToIntro = true
-            }
+            self.goToIntro = true
         }, label: {
             Text(L10n.Onboarding.Welcome.signin)
                 .modifier(BlueButtonStyle(state: .enabled))
@@ -104,63 +102,63 @@ struct SignInView: View {
     }
     
     var socialIconsView: some View {
-            HStack(alignment: .center, spacing: 25) {
-                Group {
-                    Button(action: {
-                        
-                    }, label: {
-                        Image(uiImage: Asset.OnBoarding.googleIcon.image)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 30, height: 30)
-                                        .foregroundColor(.blue)
-                                        .padding(15)
-                                        .background(Color.white)
-                                        .cornerRadius(30)
-                                        .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
-                    })
-                    Button(action: {
-                        
-                    }, label: {
-                        Image(uiImage: Asset.OnBoarding.appleIcon.image)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 30, height: 30)
-                                        .foregroundColor(.blue)
-                                        .padding(15)
-                                        .background(Color.white)
-                                        .cornerRadius(30)
-                                        .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
-                    })
-                    Button(action: {
-                        
-                    }, label: {
-                        Image(uiImage: Asset.OnBoarding.facebookIcon.image)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 30, height: 30)
-                                        .foregroundColor(.blue)
-                                        .padding(15)
-                                        .background(Color.white)
-                                        .cornerRadius(30)
-                                        .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
-                    })
-                }
+        HStack(alignment: .center, spacing: 25) {
+            Group {
+                Button(action: {
+                    viewModel.signInGoogle()
+                }, label: {
+                    Image(uiImage: Asset.OnBoarding.googleIcon.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.blue)
+                        .padding(15)
+                        .background(Color.white)
+                        .cornerRadius(30)
+                        .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
+                })
+                Button(action: {
+                    
+                }, label: {
+                    Image(uiImage: Asset.OnBoarding.appleIcon.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.blue)
+                        .padding(15)
+                        .background(Color.white)
+                        .cornerRadius(30)
+                        .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
+                })
+                Button(action: {
+                    
+                }, label: {
+                    Image(uiImage: Asset.OnBoarding.facebookIcon.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.blue)
+                        .padding(15)
+                        .background(Color.white)
+                        .cornerRadius(30)
+                        .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
+                })
             }
+        }
     }
     
     var noAccountView: some View {
-            HStack(alignment: .center, spacing: 5) {
-                Text(L10n.Onboarding.Signin.noAccountText)
-                    .font(Font.SFPro.regular(size: 16))
-                    .foregroundColor(.gray)
-                Button(action: {
-                    self.shouldSignIn = false
-                }, label: {
-                    Text(L10n.Onboarding.Welcome.signup)
-                        .font(Font.SFPro.bold(size: 16))
-                })
-            }
+        HStack(alignment: .center, spacing: 5) {
+            Text(L10n.Onboarding.Signin.noAccountText)
+                .font(Font.SFPro.regular(size: 16))
+                .foregroundColor(.gray)
+            Button(action: {
+                self.shouldSignIn = false
+            }, label: {
+                Text(L10n.Onboarding.Welcome.signup)
+                    .font(Font.SFPro.bold(size: 16))
+            })
+        }
         .padding(.bottom, 40)
     }
 }

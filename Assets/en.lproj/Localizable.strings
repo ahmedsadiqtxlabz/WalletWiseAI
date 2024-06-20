@@ -46,5 +46,24 @@
 "home.summaryIncome" = "Income";
 "home.recentTransactions" = "Recent Transactions";
 
+// MARK: - Accounts
+
+"accounts.title" = "Accounts";
+"accounts.budgetTitle" = "Monthly Budget";
+"accounts.income" = "Income";
+"accounts.expenses" = "Expenses";
+"accounts.options.history" = "Transaction History";
+"accounts.options.plans" = "Premium Plans";
+
+// MARK: - Transactions
+
+"transactions.filters.1" = "All";
+"transactions.filters.2" = "Food";
+"transactions.filters.3" = "Shopping";
+"transactions.filters.4" = "Entertainment";
+"transactions.filters.to" = "To";
+"transactions.filters.from" = "From";
+"transactions.filters.buttonTitle" = "Apply";
+
 
 

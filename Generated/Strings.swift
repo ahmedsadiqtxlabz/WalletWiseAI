@@ -10,6 +10,22 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum Accounts {
+    /// Monthly Budget
+    internal static let budgetTitle = L10n.tr("Localizable", "accounts.budgetTitle", fallback: "Monthly Budget")
+    /// Expenses
+    internal static let expenses = L10n.tr("Localizable", "accounts.expenses", fallback: "Expenses")
+    /// Income
+    internal static let income = L10n.tr("Localizable", "accounts.income", fallback: "Income")
+    /// Accounts
+    internal static let title = L10n.tr("Localizable", "accounts.title", fallback: "Accounts")
+    internal enum Options {
+      /// Transaction History
+      internal static let history = L10n.tr("Localizable", "accounts.options.history", fallback: "Transaction History")
+      /// Premium Plans
+      internal static let plans = L10n.tr("Localizable", "accounts.options.plans", fallback: "Premium Plans")
+    }
+  }
   internal enum Home {
     /// Available Funds
     internal static let availableFunds = L10n.tr("Localizable", "home.availableFunds", fallback: "Available Funds")
@@ -88,6 +104,24 @@ internal enum L10n {
       internal static let _3 = L10n.tr("Localizable", "tabbar.title.3", fallback: "Budget")
       /// Account
       internal static let _4 = L10n.tr("Localizable", "tabbar.title.4", fallback: "Account")
+    }
+  }
+  internal enum Transactions {
+    internal enum Filters {
+      /// All
+      internal static let _1 = L10n.tr("Localizable", "transactions.filters.1", fallback: "All")
+      /// Food
+      internal static let _2 = L10n.tr("Localizable", "transactions.filters.2", fallback: "Food")
+      /// Shopping
+      internal static let _3 = L10n.tr("Localizable", "transactions.filters.3", fallback: "Shopping")
+      /// Entertainment
+      internal static let _4 = L10n.tr("Localizable", "transactions.filters.4", fallback: "Entertainment")
+      /// Apply
+      internal static let buttonTitle = L10n.tr("Localizable", "transactions.filters.buttonTitle", fallback: "Apply")
+      /// From
+      internal static let from = L10n.tr("Localizable", "transactions.filters.from", fallback: "From")
+      /// To
+      internal static let to = L10n.tr("Localizable", "transactions.filters.to", fallback: "To")
     }
   }
 }

@@ -7,10 +7,10 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 class SignInViewModel: ObservableObject {
     private var disposables = Subscriptions()
-    
     @Published var email = ""
     @Published var password = ""
     @Published var showMessage: Bool = false
@@ -38,4 +38,33 @@ class SignInViewModel: ObservableObject {
         return true
     }
     
+    func signIn() {
+        SystemServices.authentication.signIn(email: email, password: password)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    print("Success")
+                case .failure(let error):
+                    print("Error: \(error.localizedDescription)")
+                }
+            }, receiveValue: { name in
+                print(name)
+            })
+            .store(in: &disposables)
+    }
+    
+    func signInGoogle() {
+        SystemServices.authentication.signInWithGoogle()
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    print("Success")
+                case .failure(let error):
+                    print("Error: \(error.localizedDescription)")
+                }
+            }, receiveValue: { _ in
+                print("Google Sign in")
+            })
+            .store(in: &disposables)
+    }
 }
