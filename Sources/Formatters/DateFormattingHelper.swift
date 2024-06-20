@@ -13,8 +13,7 @@ class DateFormattingHelper {
     
     lazy var filtersDateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd/mm/yyyy"
-        formatter.locale = .current
+        formatter.dateFormat = "dd/MM/yyyy"
         return formatter
     }()
     

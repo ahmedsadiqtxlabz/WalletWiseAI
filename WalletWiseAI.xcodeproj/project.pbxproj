@@ -46,6 +46,7 @@
 		F98C94792BEBAAC000C243F7 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98C94782BEBAAC000C243F7 /* AccountView.swift */; };
 		F9A0E6552BEE3D3700E0115A /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0E6542BEE3D3700E0115A /* TransactionRow.swift */; };
 		F9C5B6AE2C1C5E7000D44CD3 /* DateFormattingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C5B6AD2C1C5E7000D44CD3 /* DateFormattingHelper.swift */; };
+		F9C6BCDB2C246083005B1A41 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C6BCDA2C246083005B1A41 /* DatePickerView.swift */; };
 		F9CCDD9C2C0F057500520347 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F9CCDD9B2C0F057500520347 /* FirebaseAuth */; };
 		F9CCDD9E2C0F31E300520347 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCDD9D2C0F31E300520347 /* MessageView.swift */; };
 		F9CCDDA02C0F333E00520347 /* Subscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCDD9F2C0F333E00520347 /* Subscriptions.swift */; };
@@ -104,6 +105,7 @@
 		F98C94782BEBAAC000C243F7 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		F9A0E6542BEE3D3700E0115A /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 		F9C5B6AD2C1C5E7000D44CD3 /* DateFormattingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormattingHelper.swift; sourceTree = "<group>"; };
+		F9C6BCDA2C246083005B1A41 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		F9CCDD9D2C0F31E300520347 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		F9CCDD9F2C0F333E00520347 /* Subscriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriptions.swift; sourceTree = "<group>"; };
 		F9CCDDA42C10370A00520347 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				F9F7AD3B2BEA5D6900A10AB2 /* PageControl.swift */,
 				F9CCDD9D2C0F31E300520347 /* MessageView.swift */,
 				F971674A2C18685A0080DBB5 /* CustomProgressView.swift */,
+				F9C6BCDA2C246083005B1A41 /* DatePickerView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				F9CCDDAC2C103B7C00520347 /* String+EmailRegex.swift in Sources */,
 				F95198072BE3A0830053F7F0 /* RootView.swift in Sources */,
 				F95198322BE3FC9F0053F7F0 /* NavStackHandler.swift in Sources */,
+				F9C6BCDB2C246083005B1A41 /* DatePickerView.swift in Sources */,
 				F9CEABC22C199F15003CB01B /* TransactionsHistoryView.swift in Sources */,
 				F9F7AD3C2BEA5D6900A10AB2 /* PageControl.swift in Sources */,
 				F95198362BE4CD7A0053F7F0 /* RoundedCorner.swift in Sources */,

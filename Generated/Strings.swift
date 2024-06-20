@@ -26,6 +26,10 @@ internal enum L10n {
       internal static let plans = L10n.tr("Localizable", "accounts.options.plans", fallback: "Premium Plans")
     }
   }
+  internal enum Global {
+    /// Done
+    internal static let done = L10n.tr("Localizable", "global.done", fallback: "Done")
+  }
   internal enum Home {
     /// Available Funds
     internal static let availableFunds = L10n.tr("Localizable", "home.availableFunds", fallback: "Available Funds")

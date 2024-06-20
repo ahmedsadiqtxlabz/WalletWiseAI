@@ -25,28 +25,20 @@ struct TransactionsHistoryView: View {
     @State var fromDate = Date()
     
     var body: some View {
-        ZStack(alignment: .bottom) {
+        ZStack(alignment: .center) {
             VStack {
                 headerView
                 filtersView
                 transactionsView
             }
-            .padding(.top, 60)
             .background(Color(Asset.Colors.primaryLightGray.color).edgesIgnoringSafeArea(.all))
             
-            if isShowingFilters {
-                Color.black.opacity(0.7)
-                    .edgesIgnoringSafeArea(.all)
-                    .onTapGesture {
-                        self.isShowingFilters = false
-                    }
-                FilterView(isPresented: $isShowingFilters, fromDate: $fromDate, toDate: $toDate, showFromDatePicker: $showFromDatePicker, showToDatePicker: $showToDatePicker)
-                    .transition(.move(edge: .bottom))
-                    .animation(.easeInOut)
+            filterOverlay
+            if showFromDatePicker {
+                fromDatePickerView
             }
-            
-            if showFromDatePicker || showToDatePicker {
-                showFromDatePickerView
+            if showToDatePicker {
+                toDatePickerView
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -84,6 +76,23 @@ extension TransactionsHistoryView {
             selectedFilters: $selectedFilters)
     }
     
+    var filterOverlay: some View {
+        VStack(alignment: .center) {
+            ZStack(alignment: .bottom) {
+                if isShowingFilters {
+                    Color.black.opacity(0.7)
+                        .edgesIgnoringSafeArea(.all)
+                        .onTapGesture {
+                            self.isShowingFilters = false
+                        }
+                    FilterView(isPresented: $isShowingFilters, fromDate: $fromDate, toDate: $toDate, showFromDatePicker: $showFromDatePicker, showToDatePicker: $showToDatePicker)
+                        .transition(.move(edge: .bottom))
+                        .animation(.easeInOut)
+                }
+            }
+        }
+    }
+    
     var transactionsView: some View {
         ScrollView(.vertical, showsIndicators: false) {
             Section {
@@ -97,7 +106,7 @@ extension TransactionsHistoryView {
                 listHeader
             }
         }
-        .padding(.bottom, 35)
+        .padding(.bottom, 10)
     }
     
     var listHeader: some View {
@@ -113,34 +122,15 @@ extension TransactionsHistoryView {
         .padding(.top, 5)
     }
     
-    var showFromDatePickerView: some View {
-        ZStack(alignment: .center) {
-            Color.black.opacity(0.7)
-                .edgesIgnoringSafeArea(.all)
-            Rectangle()
-                .foregroundColor(Color(Asset.Colors.primaryWhite.color))
-                .cornerRadius(10)
-            VStack {
-                Spacer()
-                HStack(alignment: .center) {
-                    Spacer()
-                    Button(action: {
-                        
-                    }, label: {
-                        Text("Done")
-                            .font(Font.SFPro.semiBold(size: 16))
-                            .foregroundColor(Color(Asset.Colors.primaryBlue.color))
-                            .padding()
-                    })
-                }
-                DatePicker("", selection: $fromDate, displayedComponents: .date)
-                    .datePickerStyle(GraphicalDatePickerStyle())
-                    .padding()
-                    .labelsHidden()
-                Spacer()
+    var fromDatePickerView: some View {
+            DatePickerView(date: $fromDate) {
+                self.showFromDatePicker = false
             }
-            .frame(height: 300)
-            .padding()
+    }
+    
+    var toDatePickerView: some View {
+        DatePickerView(date: $toDate) {
+            self.showToDatePicker = false
         }
     }
 }

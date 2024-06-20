@@ -5,6 +5,9 @@
 //  Created by Hannan Khan on 02/05/2024.
 //
 
+// MARK: - Global
+"global.done" = "Done";
+
 // MARK: - OnBoarding
 
 "onboarding.welcome.title" = "Welcome!";

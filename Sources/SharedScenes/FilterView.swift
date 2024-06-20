@@ -27,7 +27,7 @@ struct FilterView: View {
             }
         }
         .edgesIgnoringSafeArea(.all)
-        .frame(height: 330)
+        .frame(height: 300)
     }
 }
 
@@ -79,7 +79,7 @@ extension FilterView {
                     .cornerRadius(10, corners: .allCorners)
                     .frame(height: 45)
                 HStack {
-                    Text(DateFormattingHelper.shared.filtersDateFormatter.string(from: fromDate))
+                    Text(DateFormattingHelper.shared.filtersDateFormatter.string(from: toDate))
                         .font(Font.SFPro.medium(size: 16))
                     Spacer()
                     Image(uiImage: Asset.calendar.image)
