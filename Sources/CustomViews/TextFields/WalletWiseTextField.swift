@@ -30,6 +30,6 @@ struct WalletWiseTextField: View {
             
         }
         .background(Color(Asset.Colors.primaryWhite.color))
-        .cornerRadius(10)
+        .cornerRadius(10, corners: .allCorners)
     }
 }

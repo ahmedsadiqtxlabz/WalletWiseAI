@@ -18,7 +18,7 @@ struct DatePickerView: View {
                 .edgesIgnoringSafeArea(.all)
             Rectangle()
                 .foregroundColor(Color(Asset.Colors.primaryWhite.color))
-                .cornerRadius(10)
+                .cornerRadius(10, corners: .allCorners)
                 .frame(height: 400)
                 .padding()
             VStack {

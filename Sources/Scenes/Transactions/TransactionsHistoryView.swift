@@ -17,6 +17,7 @@ struct TransactionsHistoryView: View {
     ]
     
     @Environment(\.presentationMode) var presentationMode
+    @State var goToDetails: Bool = false
     @State var selectedFilters: Set<UUID> = []
     @State var isShowingFilters: Bool = false
     @State var showFromDatePicker: Bool = false
@@ -40,6 +41,7 @@ struct TransactionsHistoryView: View {
             if showToDatePicker {
                 toDatePickerView
             }
+            links
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
@@ -85,7 +87,10 @@ extension TransactionsHistoryView {
                         .onTapGesture {
                             self.isShowingFilters = false
                         }
-                    FilterView(isPresented: $isShowingFilters, fromDate: $fromDate, toDate: $toDate, showFromDatePicker: $showFromDatePicker, showToDatePicker: $showToDatePicker)
+                    FilterView(
+                        isPresented: $isShowingFilters, fromDate: $fromDate,
+                        toDate: $toDate, showFromDatePicker: $showFromDatePicker,
+                        showToDatePicker: $showToDatePicker)
                         .transition(.move(edge: .bottom))
                         .animation(.easeInOut)
                 }
@@ -99,6 +104,9 @@ extension TransactionsHistoryView {
                 LazyVStack(alignment: .leading) {
                     ForEach(0..<10, id: \.self) { _ in
                         TransactionRow()
+                            .onTapGesture {
+                                self.goToDetails = true
+                            }
                     }
                 }
                 .padding(.horizontal, 10)
@@ -131,6 +139,13 @@ extension TransactionsHistoryView {
     var toDatePickerView: some View {
         DatePickerView(date: $toDate) {
             self.showToDatePicker = false
+        }
+    }
+    
+    var links: some View {
+        Group {
+            NavigationLink(destination: TransactionDetailsView(), isActive: self.$goToDetails) { EmptyView() }
+                .isDetailLink(false)
         }
     }
 }

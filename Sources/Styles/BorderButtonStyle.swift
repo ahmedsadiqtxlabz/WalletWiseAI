@@ -23,7 +23,7 @@ struct BorderButtonStyle: ViewModifier {
       .padding()
       .foregroundColor(Color(Asset.Colors.primaryWhite.color))
       .background(Color.clear)
-      .cornerRadius(10)
+      .cornerRadius(10, corners: .allCorners)
       .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(Asset.Colors.primaryWhite.color), lineWidth: 2))
   }
 }

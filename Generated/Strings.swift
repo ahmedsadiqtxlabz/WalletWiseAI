@@ -111,6 +111,10 @@ internal enum L10n {
     }
   }
   internal enum Transactions {
+    internal enum Details {
+      /// Transaction Details
+      internal static let title = L10n.tr("Localizable", "transactions.details.title", fallback: "Transaction Details")
+    }
     internal enum Filters {
       /// All
       internal static let _1 = L10n.tr("Localizable", "transactions.filters.1", fallback: "All")

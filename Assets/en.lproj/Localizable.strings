@@ -67,6 +67,7 @@
 "transactions.filters.to" = "To";
 "transactions.filters.from" = "From";
 "transactions.filters.buttonTitle" = "Apply";
+"transactions.details.title" = "Transaction Details";
 
 
 

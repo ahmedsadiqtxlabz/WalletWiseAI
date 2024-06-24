@@ -14,7 +14,7 @@ struct AccountView: View {
     }
     
     @State var progress: CGFloat = 0.7
-    @State var goToDetails: Bool = false
+    @State var goToTransactions: Bool = false
     
     let options: [Option] = [
         Option(icon: Asset.Accounts.transactionHistoryIcon.image, title: L10n.Accounts.Options.history),
@@ -70,7 +70,7 @@ struct AccountView: View {
                 ForEach(options, id: \.title) { option in
                     AccountsRow(icon: option.icon, title: option.title)
                         .onTapGesture {
-                            self.goToDetails = true
+                            self.goToTransactions = true
                         }
                 }
             }
@@ -163,7 +163,7 @@ extension AccountView {
     
     var links: some View {
         Group {
-            NavigationLink(destination: TransactionsHistoryView(), isActive: self.$goToDetails) { EmptyView() }
+            NavigationLink(destination: TransactionsHistoryView(), isActive: self.$goToTransactions) { EmptyView() }
                 .isDetailLink(false)
         }
     }

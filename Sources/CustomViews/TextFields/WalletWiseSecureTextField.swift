@@ -28,6 +28,6 @@ struct WalletWiseSecureTextField: View {
                     .frame(height: 45)
             }
             .background(Color(Asset.Colors.primaryWhite.color))
-            .cornerRadius(10)
+            .cornerRadius(10, corners: .allCorners)
         }
 }

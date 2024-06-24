@@ -112,7 +112,7 @@ struct SignUpView: View {
                                         .foregroundColor(.blue)
                                         .padding(15)
                                         .background(Color.white)
-                                        .cornerRadius(30)
+                                        .cornerRadius(30, corners: .allCorners)
                                         .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
                     })
                     Button(action: {
@@ -125,7 +125,7 @@ struct SignUpView: View {
                                         .foregroundColor(.blue)
                                         .padding(15)
                                         .background(Color.white)
-                                        .cornerRadius(30)
+                                        .cornerRadius(30, corners: .allCorners)
                                         .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
                     })
                     Button(action: {
@@ -138,7 +138,7 @@ struct SignUpView: View {
                                         .foregroundColor(.blue)
                                         .padding(15)
                                         .background(Color.white)
-                                        .cornerRadius(30)
+                                        .cornerRadius(30, corners: .allCorners)
                                         .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
                     })
                 }

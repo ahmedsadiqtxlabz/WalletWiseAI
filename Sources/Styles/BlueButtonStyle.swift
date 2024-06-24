@@ -23,7 +23,7 @@ struct BlueButtonStyle: ViewModifier {
       .padding()
       .foregroundColor(Color(Asset.Colors.primaryWhite.color))
       .background(self.state == .enabled ? Color(Asset.Colors.primaryBlue.color) : Color(Asset.Colors.disabled.color))
-      .cornerRadius(10)
+      .cornerRadius(10, corners: .allCorners)
   }
 }
 
