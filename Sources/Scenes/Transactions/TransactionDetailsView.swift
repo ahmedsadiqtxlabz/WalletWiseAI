@@ -92,7 +92,7 @@ extension TransactionDetailsView {
     
     var detailsDataView: some View {
         ForEach(data, id: \.title) { data in
-            DetailsDataView(title: data.title, value: data.value)
+            DetailsDataView(title: data.title, value: data.value) 
         }
     }
 }

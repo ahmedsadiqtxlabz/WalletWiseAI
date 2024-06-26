@@ -7,6 +7,7 @@
 
 // MARK: - Global
 "global.done" = "Done";
+"global.cancel" = "Cancel";
 
 // MARK: - OnBoarding
 
@@ -69,5 +70,12 @@
 "transactions.filters.buttonTitle" = "Apply";
 "transactions.details.title" = "Transaction Details";
 
+// MARK: - Expenses
 
+"expenses.title" = "Add Expense";
+
+// MARK: - AI Recommendations
+
+"recommendations.title" = "AI Recommendations";
+"recommendations.description" = "AI analysis indicates that Indrive offers better value than Uber. Consider booking with Indrive in the future to save money upto 10%";
 

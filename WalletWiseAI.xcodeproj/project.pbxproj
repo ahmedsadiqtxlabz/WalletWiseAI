@@ -38,6 +38,8 @@
 		F96E331C2C11CE4000F22926 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F96E331B2C11CE4000F22926 /* GoogleSignIn */; };
 		F96E331E2C11CE4000F22926 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F96E331D2C11CE4000F22926 /* GoogleSignInSwift */; };
 		F96E33202C11E18B00F22926 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E331F2C11E18B00F22926 /* FirebaseService.swift */; };
+		F96F31E22C2976ED0094F83B /* AddExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96F31E12C2976ED0094F83B /* AddExpensesView.swift */; };
+		F96F31E42C2984A00094F83B /* WalletWiseDropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96F31E32C2984A00094F83B /* WalletWiseDropDownTextField.swift */; };
 		F971674B2C18685A0080DBB5 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971674A2C18685A0080DBB5 /* CustomProgressView.swift */; };
 		F98C946D2BEBA96200C243F7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98C946C2BEBA96200C243F7 /* MainView.swift */; };
 		F98C94702BEBA9DF00C243F7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98C946F2BEBA9DF00C243F7 /* HomeView.swift */; };
@@ -46,6 +48,7 @@
 		F98C94792BEBAAC000C243F7 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98C94782BEBAAC000C243F7 /* AccountView.swift */; };
 		F98EA2622C29446900C76FBA /* TransactionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EA2612C29446900C76FBA /* TransactionDetailsView.swift */; };
 		F9A0E6552BEE3D3700E0115A /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0E6542BEE3D3700E0115A /* TransactionRow.swift */; };
+		F9A0ED5F2C2BECD2004BCC50 /* AIRecommendationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0ED5E2C2BECD2004BCC50 /* AIRecommendationsView.swift */; };
 		F9C5B6AE2C1C5E7000D44CD3 /* DateFormattingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C5B6AD2C1C5E7000D44CD3 /* DateFormattingHelper.swift */; };
 		F9C6BCDB2C246083005B1A41 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C6BCDA2C246083005B1A41 /* DatePickerView.swift */; };
 		F9CCDD9C2C0F057500520347 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F9CCDD9B2C0F057500520347 /* FirebaseAuth */; };
@@ -98,6 +101,8 @@
 		F951983A2BE4E2100053F7F0 /* WalletWiseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseTextField.swift; sourceTree = "<group>"; };
 		F96E33182C11CCD800F22926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F96E331F2C11E18B00F22926 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		F96F31E12C2976ED0094F83B /* AddExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesView.swift; sourceTree = "<group>"; };
+		F96F31E32C2984A00094F83B /* WalletWiseDropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseDropDownTextField.swift; sourceTree = "<group>"; };
 		F971674A2C18685A0080DBB5 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		F98C946C2BEBA96200C243F7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F98C946F2BEBA9DF00C243F7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -106,6 +111,7 @@
 		F98C94782BEBAAC000C243F7 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		F98EA2612C29446900C76FBA /* TransactionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsView.swift; sourceTree = "<group>"; };
 		F9A0E6542BEE3D3700E0115A /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		F9A0ED5E2C2BECD2004BCC50 /* AIRecommendationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIRecommendationsView.swift; sourceTree = "<group>"; };
 		F9C5B6AD2C1C5E7000D44CD3 /* DateFormattingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormattingHelper.swift; sourceTree = "<group>"; };
 		F9C6BCDA2C246083005B1A41 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		F9CCDD9D2C0F31E300520347 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
@@ -232,6 +238,8 @@
 		F95197FE2BE39E180053F7F0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F9A0ED5D2C2BEC92004BCC50 /* AIRecommendations */,
+				F96F31E02C2976CA0094F83B /* Expenses */,
 				F9CEABC02C199EE3003CB01B /* Transactions */,
 				F98C94772BEBAA9800C243F7 /* Account */,
 				F98C94742BEBAA5700C243F7 /* Budget */,
@@ -314,6 +322,7 @@
 			children = (
 				F951983A2BE4E2100053F7F0 /* WalletWiseTextField.swift */,
 				F9F7AD302BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift */,
+				F96F31E32C2984A00094F83B /* WalletWiseDropDownTextField.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -323,6 +332,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F96F31E02C2976CA0094F83B /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				F96F31E12C2976ED0094F83B /* AddExpensesView.swift */,
+			);
+			path = Expenses;
 			sourceTree = "<group>";
 		};
 		F98C946B2BEBA93900C243F7 /* Main */ = {
@@ -374,6 +391,14 @@
 				F9CEABC52C19B5A3003CB01B /* FilterView.swift */,
 			);
 			path = SharedScenes;
+			sourceTree = "<group>";
+		};
+		F9A0ED5D2C2BEC92004BCC50 /* AIRecommendations */ = {
+			isa = PBXGroup;
+			children = (
+				F9A0ED5E2C2BECD2004BCC50 /* AIRecommendationsView.swift */,
+			);
+			path = AIRecommendations;
 			sourceTree = "<group>";
 		};
 		F9C5B6AC2C1C5E5400D44CD3 /* Formatters */ = {
@@ -516,6 +541,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		F951980D2BE3A6CF0053F7F0 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -548,6 +574,7 @@
 				F951981B2BE3B1D00053F7F0 /* Assets.swift in Sources */,
 				F9CEABBF2C1982A9003CB01B /* AccountsRow.swift in Sources */,
 				F9CCDDA52C10370A00520347 /* SignInViewModel.swift in Sources */,
+				F96F31E22C2976ED0094F83B /* AddExpensesView.swift in Sources */,
 				F95198382BE4CDB90053F7F0 /* View+Corners.swift in Sources */,
 				F9F7AD312BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift in Sources */,
 				F98C94792BEBAAC000C243F7 /* AccountView.swift in Sources */,
@@ -557,6 +584,7 @@
 				F9C6BCDB2C246083005B1A41 /* DatePickerView.swift in Sources */,
 				F9CEABC22C199F15003CB01B /* TransactionsHistoryView.swift in Sources */,
 				F9F7AD3C2BEA5D6900A10AB2 /* PageControl.swift in Sources */,
+				F9A0ED5F2C2BECD2004BCC50 /* AIRecommendationsView.swift in Sources */,
 				F95198362BE4CD7A0053F7F0 /* RoundedCorner.swift in Sources */,
 				F951980A2BE3A1430053F7F0 /* WelcomeView.swift in Sources */,
 				F971674B2C18685A0080DBB5 /* CustomProgressView.swift in Sources */,
@@ -566,6 +594,7 @@
 				F9C5B6AE2C1C5E7000D44CD3 /* DateFormattingHelper.swift in Sources */,
 				F98C94762BEBAA7B00C243F7 /* BudgetView.swift in Sources */,
 				F95198212BE3BBC00053F7F0 /* BorderButtonStyle.swift in Sources */,
+				F96F31E42C2984A00094F83B /* WalletWiseDropDownTextField.swift in Sources */,
 				F9F7AD352BEA3F4600A10AB2 /* IntroView.swift in Sources */,
 				F9CCDDAF2C103C7E00520347 /* SignUpViewModel.swift in Sources */,
 				F951982F2BE3F9CC0053F7F0 /* AuthView.swift in Sources */,

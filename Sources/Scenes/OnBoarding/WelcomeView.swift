@@ -76,7 +76,10 @@ extension WelcomeView {
             self.goToAuth = true
         }, label: {
             Text(L10n.Onboarding.Welcome.signup)
-                .modifier(BorderButtonStyle(state: .enabled))
+                .modifier(BorderButtonStyle(
+                    state: .enabled,
+                    strokeColor: Color(Asset.Colors.primaryWhite.color),
+                    color: Color(Asset.Colors.primaryWhite.color)))
                 .font(Font.SFPro.semiBold(size: 17))
             
         })

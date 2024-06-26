@@ -26,7 +26,13 @@ internal enum L10n {
       internal static let plans = L10n.tr("Localizable", "accounts.options.plans", fallback: "Premium Plans")
     }
   }
+  internal enum Expenses {
+    /// Add Expense
+    internal static let title = L10n.tr("Localizable", "expenses.title", fallback: "Add Expense")
+  }
   internal enum Global {
+    /// Cancel
+    internal static let cancel = L10n.tr("Localizable", "global.cancel", fallback: "Cancel")
     /// Done
     internal static let done = L10n.tr("Localizable", "global.done", fallback: "Done")
   }
@@ -97,6 +103,12 @@ internal enum L10n {
       /// Welcome!
       internal static let title = L10n.tr("Localizable", "onboarding.welcome.title", fallback: "Welcome!")
     }
+  }
+  internal enum Recommendations {
+    /// AI analysis indicates that Indrive offers better value than Uber. Consider booking with Indrive in the future to save money upto 10%
+    internal static let description = L10n.tr("Localizable", "recommendations.description", fallback: "AI analysis indicates that Indrive offers better value than Uber. Consider booking with Indrive in the future to save money upto 10%")
+    /// AI Recommendations
+    internal static let title = L10n.tr("Localizable", "recommendations.title", fallback: "AI Recommendations")
   }
   internal enum Tabbar {
     internal enum Title {

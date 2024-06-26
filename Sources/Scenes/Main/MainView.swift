@@ -17,6 +17,7 @@ enum TabBarItems {
 struct MainView: View {
     
     @State private var tabSelection: TabBarItems = .home
+    @State private var showAddExpenseView: Bool = false
     
     init() {
         let appearance = UITabBarAppearance()
@@ -47,7 +48,7 @@ struct MainView: View {
                 accountTab
             }
                 Button(action: {
-                    
+                    self.showAddExpenseView = true
                 }, label: {
                     Image(uiImage: Asset.TabBar.floatAddButton.image)
                         .padding(.leading, 3)
@@ -58,6 +59,11 @@ struct MainView: View {
         .edgesIgnoringSafeArea(.all)
         .transition(.opacity)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+        .sheet(isPresented: $showAddExpenseView, onDismiss: {
+            self.showAddExpenseView = false
+        }, content: {
+            AddExpensesView(isPresented: $showAddExpenseView)
+        })
     }
 }
 

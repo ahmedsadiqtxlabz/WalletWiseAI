@@ -62,6 +62,9 @@ internal enum Asset {
     internal static let usernameIcon = ImageAsset(name: "OnBoarding/username-icon")
     internal static let welcomeBackground = ImageAsset(name: "OnBoarding/welcome-background")
   }
+  internal enum Recommendations {
+    internal static let recommendationsIcon = ImageAsset(name: "Recommendations/recommendations-icon")
+  }
   internal enum TabBar {
     internal static let budgetSelected = ImageAsset(name: "TabBar/budget-selected")
     internal static let budget = ImageAsset(name: "TabBar/budget")
