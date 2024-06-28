@@ -28,8 +28,7 @@ struct WalletWiseTextField: View {
                 .padding(.trailing, 10)
                 .keyboardType(keyboardType)
                 .font(Font.SFPro.regular(size: 16))
-                .frame(height: 45)
-            
+                .frame(height: 45)            
         }
         .background(Color(Asset.Colors.primaryWhite.color))
         .cornerRadius(10, corners: .allCorners)

@@ -73,7 +73,7 @@ extension TransactionDetailsView {
                 .cornerRadius(10, corners: .allCorners)
             VStack(alignment: .center, spacing: 10) {
                 HStack {
-                    Text("Details")
+                    Text(L10n.Transactions.Details.detailsViewTitle)
                         .font(Font.SFPro.medium(size: 16))
                     Spacer()
                 }

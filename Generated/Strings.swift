@@ -29,6 +29,16 @@ internal enum L10n {
   internal enum Expenses {
     /// Add Expense
     internal static let title = L10n.tr("Localizable", "expenses.title", fallback: "Add Expense")
+    internal enum Placeholders {
+      /// Add amount
+      internal static let amount = L10n.tr("Localizable", "expenses.placeholders.amount", fallback: "Add amount")
+      /// Select Category
+      internal static let category = L10n.tr("Localizable", "expenses.placeholders.category", fallback: "Select Category")
+      /// Add Note
+      internal static let note = L10n.tr("Localizable", "expenses.placeholders.note", fallback: "Add Note")
+      /// Upload receipt (Optional)
+      internal static let picker = L10n.tr("Localizable", "expenses.placeholders.picker", fallback: "Upload receipt (Optional)")
+    }
   }
   internal enum Global {
     /// Cancel
@@ -49,6 +59,10 @@ internal enum L10n {
     internal static let summaryTitle = L10n.tr("Localizable", "home.summaryTitle", fallback: "Monthly Summary")
     /// Total Balance
     internal static let totalBalance = L10n.tr("Localizable", "home.totalBalance", fallback: "Total Balance")
+  }
+  internal enum Notifications {
+    /// Notifications
+    internal static let title = L10n.tr("Localizable", "notifications.title", fallback: "Notifications")
   }
   internal enum Onboarding {
     internal enum Intro {
@@ -124,6 +138,8 @@ internal enum L10n {
   }
   internal enum Transactions {
     internal enum Details {
+      /// Details
+      internal static let detailsViewTitle = L10n.tr("Localizable", "transactions.details.detailsViewTitle", fallback: "Details")
       /// Transaction Details
       internal static let title = L10n.tr("Localizable", "transactions.details.title", fallback: "Transaction Details")
     }

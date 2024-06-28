@@ -49,6 +49,14 @@
 		F98EA2622C29446900C76FBA /* TransactionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EA2612C29446900C76FBA /* TransactionDetailsView.swift */; };
 		F9A0E6552BEE3D3700E0115A /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0E6542BEE3D3700E0115A /* TransactionRow.swift */; };
 		F9A0ED5F2C2BECD2004BCC50 /* AIRecommendationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0ED5E2C2BECD2004BCC50 /* AIRecommendationsView.swift */; };
+		F9A0ED622C2C0146004BCC50 /* WalletWiseSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0ED612C2C0146004BCC50 /* WalletWiseSecureTextField.swift */; };
+		F9A0ED642C2C018C004BCC50 /* WalletWiseCurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0ED632C2C018C004BCC50 /* WalletWiseCurrencyTextField.swift */; };
+		F9A0ED672C2C2640004BCC50 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0ED662C2C2640004BCC50 /* NotificationsView.swift */; };
+		F9A0ED692C2C470F004BCC50 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0ED682C2C470F004BCC50 /* ImagePicker.swift */; };
+		F9A0ED6B2C2C4F3E004BCC50 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0ED6A2C2C4F3E004BCC50 /* ImagePickerView.swift */; };
+		F9A0ED6D2C2D6C15004BCC50 /* WalletWiseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0ED6C2C2D6C15004BCC50 /* WalletWiseTextView.swift */; };
+		F9A0ED702C2ED614004BCC50 /* DropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0ED6F2C2ED614004BCC50 /* DropDownTextField.swift */; };
+		F9A0ED722C2ED65E004BCC50 /* DropDownTextFieldWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0ED712C2ED65E004BCC50 /* DropDownTextFieldWrapper.swift */; };
 		F9C5B6AE2C1C5E7000D44CD3 /* DateFormattingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C5B6AD2C1C5E7000D44CD3 /* DateFormattingHelper.swift */; };
 		F9C6BCDB2C246083005B1A41 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C6BCDA2C246083005B1A41 /* DatePickerView.swift */; };
 		F9CCDD9C2C0F057500520347 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F9CCDD9B2C0F057500520347 /* FirebaseAuth */; };
@@ -63,7 +71,6 @@
 		F9CEABC22C199F15003CB01B /* TransactionsHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CEABC12C199F15003CB01B /* TransactionsHistoryView.swift */; };
 		F9CEABC42C19A387003CB01B /* TransactionsFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CEABC32C19A387003CB01B /* TransactionsFilterView.swift */; };
 		F9CEABC62C19B5A3003CB01B /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CEABC52C19B5A3003CB01B /* FilterView.swift */; };
-		F9F7AD312BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7AD302BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift */; };
 		F9F7AD332BE50CB900A10AB2 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7AD322BE50CB900A10AB2 /* SignUpView.swift */; };
 		F9F7AD352BEA3F4600A10AB2 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7AD342BEA3F4600A10AB2 /* IntroView.swift */; };
 		F9F7AD382BEA592400A10AB2 /* IntroPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7AD372BEA592400A10AB2 /* IntroPageView.swift */; };
@@ -112,6 +119,14 @@
 		F98EA2612C29446900C76FBA /* TransactionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsView.swift; sourceTree = "<group>"; };
 		F9A0E6542BEE3D3700E0115A /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 		F9A0ED5E2C2BECD2004BCC50 /* AIRecommendationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIRecommendationsView.swift; sourceTree = "<group>"; };
+		F9A0ED612C2C0146004BCC50 /* WalletWiseSecureTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletWiseSecureTextField.swift; sourceTree = "<group>"; };
+		F9A0ED632C2C018C004BCC50 /* WalletWiseCurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseCurrencyTextField.swift; sourceTree = "<group>"; };
+		F9A0ED662C2C2640004BCC50 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		F9A0ED682C2C470F004BCC50 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F9A0ED6A2C2C4F3E004BCC50 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		F9A0ED6C2C2D6C15004BCC50 /* WalletWiseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseTextView.swift; sourceTree = "<group>"; };
+		F9A0ED6F2C2ED614004BCC50 /* DropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextField.swift; sourceTree = "<group>"; };
+		F9A0ED712C2ED65E004BCC50 /* DropDownTextFieldWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextFieldWrapper.swift; sourceTree = "<group>"; };
 		F9C5B6AD2C1C5E7000D44CD3 /* DateFormattingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormattingHelper.swift; sourceTree = "<group>"; };
 		F9C6BCDA2C246083005B1A41 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		F9CCDD9D2C0F31E300520347 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
@@ -125,7 +140,6 @@
 		F9CEABC12C199F15003CB01B /* TransactionsHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsHistoryView.swift; sourceTree = "<group>"; };
 		F9CEABC32C19A387003CB01B /* TransactionsFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsFilterView.swift; sourceTree = "<group>"; };
 		F9CEABC52C19B5A3003CB01B /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
-		F9F7AD302BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseSecureTextField.swift; sourceTree = "<group>"; };
 		F9F7AD322BE50CB900A10AB2 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		F9F7AD342BEA3F4600A10AB2 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		F9F7AD372BEA592400A10AB2 /* IntroPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPageView.swift; sourceTree = "<group>"; };
@@ -238,6 +252,7 @@
 		F95197FE2BE39E180053F7F0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F9A0ED652C2C25EF004BCC50 /* Notifications */,
 				F9A0ED5D2C2BEC92004BCC50 /* AIRecommendations */,
 				F96F31E02C2976CA0094F83B /* Expenses */,
 				F9CEABC02C199EE3003CB01B /* Transactions */,
@@ -313,6 +328,8 @@
 				F9CCDD9D2C0F31E300520347 /* MessageView.swift */,
 				F971674A2C18685A0080DBB5 /* CustomProgressView.swift */,
 				F9C6BCDA2C246083005B1A41 /* DatePickerView.swift */,
+				F9A0ED682C2C470F004BCC50 /* ImagePicker.swift */,
+				F9A0ED6A2C2C4F3E004BCC50 /* ImagePickerView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -320,9 +337,12 @@
 		F95198392BE4E1E60053F7F0 /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
+				F9A0ED6E2C2ED5EB004BCC50 /* DropdownTextField */,
+				F9A0ED612C2C0146004BCC50 /* WalletWiseSecureTextField.swift */,
 				F951983A2BE4E2100053F7F0 /* WalletWiseTextField.swift */,
-				F9F7AD302BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift */,
 				F96F31E32C2984A00094F83B /* WalletWiseDropDownTextField.swift */,
+				F9A0ED632C2C018C004BCC50 /* WalletWiseCurrencyTextField.swift */,
+				F9A0ED6C2C2D6C15004BCC50 /* WalletWiseTextView.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -399,6 +419,23 @@
 				F9A0ED5E2C2BECD2004BCC50 /* AIRecommendationsView.swift */,
 			);
 			path = AIRecommendations;
+			sourceTree = "<group>";
+		};
+		F9A0ED652C2C25EF004BCC50 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				F9A0ED662C2C2640004BCC50 /* NotificationsView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		F9A0ED6E2C2ED5EB004BCC50 /* DropdownTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F9A0ED6F2C2ED614004BCC50 /* DropDownTextField.swift */,
+				F9A0ED712C2ED65E004BCC50 /* DropDownTextFieldWrapper.swift */,
+			);
+			path = DropdownTextField;
 			sourceTree = "<group>";
 		};
 		F9C5B6AC2C1C5E5400D44CD3 /* Formatters */ = {
@@ -568,6 +605,7 @@
 				F95198022BE39F0B0053F7F0 /* AppDelegate.swift in Sources */,
 				F9CCDDAA2C103B1400520347 /* Publisher+CollectionValidators.swift in Sources */,
 				F9CCDDA82C103ABF00520347 /* Publisher+FormValidators.swift in Sources */,
+				F9A0ED692C2C470F004BCC50 /* ImagePicker.swift in Sources */,
 				F98EA2622C29446900C76FBA /* TransactionDetailsView.swift in Sources */,
 				F951982D2BE3C53A0053F7F0 /* Fonts+Custom.swift in Sources */,
 				F95198042BE39FD60053F7F0 /* SceneDelegate.swift in Sources */,
@@ -576,7 +614,6 @@
 				F9CCDDA52C10370A00520347 /* SignInViewModel.swift in Sources */,
 				F96F31E22C2976ED0094F83B /* AddExpensesView.swift in Sources */,
 				F95198382BE4CDB90053F7F0 /* View+Corners.swift in Sources */,
-				F9F7AD312BE4FEEC00A10AB2 /* WalletWiseSecureTextField.swift in Sources */,
 				F98C94792BEBAAC000C243F7 /* AccountView.swift in Sources */,
 				F9CCDDAC2C103B7C00520347 /* String+EmailRegex.swift in Sources */,
 				F95198072BE3A0830053F7F0 /* RootView.swift in Sources */,
@@ -586,6 +623,7 @@
 				F9F7AD3C2BEA5D6900A10AB2 /* PageControl.swift in Sources */,
 				F9A0ED5F2C2BECD2004BCC50 /* AIRecommendationsView.swift in Sources */,
 				F95198362BE4CD7A0053F7F0 /* RoundedCorner.swift in Sources */,
+				F9A0ED642C2C018C004BCC50 /* WalletWiseCurrencyTextField.swift in Sources */,
 				F951980A2BE3A1430053F7F0 /* WelcomeView.swift in Sources */,
 				F971674B2C18685A0080DBB5 /* CustomProgressView.swift in Sources */,
 				F951981F2BE3B2600053F7F0 /* BlueButtonStyle.swift in Sources */,
@@ -594,6 +632,7 @@
 				F9C5B6AE2C1C5E7000D44CD3 /* DateFormattingHelper.swift in Sources */,
 				F98C94762BEBAA7B00C243F7 /* BudgetView.swift in Sources */,
 				F95198212BE3BBC00053F7F0 /* BorderButtonStyle.swift in Sources */,
+				F9A0ED702C2ED614004BCC50 /* DropDownTextField.swift in Sources */,
 				F96F31E42C2984A00094F83B /* WalletWiseDropDownTextField.swift in Sources */,
 				F9F7AD352BEA3F4600A10AB2 /* IntroView.swift in Sources */,
 				F9CCDDAF2C103C7E00520347 /* SignUpViewModel.swift in Sources */,
@@ -604,12 +643,17 @@
 				F98C94732BEBAA3700C243F7 /* AIInsightsView.swift in Sources */,
 				F951983B2BE4E2100053F7F0 /* WalletWiseTextField.swift in Sources */,
 				F9CCDDA02C0F333E00520347 /* Subscriptions.swift in Sources */,
+				F9A0ED6D2C2D6C15004BCC50 /* WalletWiseTextView.swift in Sources */,
 				F98C946D2BEBA96200C243F7 /* MainView.swift in Sources */,
+				F9A0ED722C2ED65E004BCC50 /* DropDownTextFieldWrapper.swift in Sources */,
 				F9CCDD9E2C0F31E300520347 /* MessageView.swift in Sources */,
+				F9A0ED672C2C2640004BCC50 /* NotificationsView.swift in Sources */,
 				F96E33202C11E18B00F22926 /* FirebaseService.swift in Sources */,
 				F9F7AD332BE50CB900A10AB2 /* SignUpView.swift in Sources */,
 				F98C94702BEBA9DF00C243F7 /* HomeView.swift in Sources */,
+				F9A0ED622C2C0146004BCC50 /* WalletWiseSecureTextField.swift in Sources */,
 				F9A0E6552BEE3D3700E0115A /* TransactionRow.swift in Sources */,
+				F9A0ED6B2C2C4F3E004BCC50 /* ImagePickerView.swift in Sources */,
 				F9F7AD382BEA592400A10AB2 /* IntroPageView.swift in Sources */,
 				F9CEABC42C19A387003CB01B /* TransactionsFilterView.swift in Sources */,
 				F95198342BE4C8000053F7F0 /* SignInView.swift in Sources */,

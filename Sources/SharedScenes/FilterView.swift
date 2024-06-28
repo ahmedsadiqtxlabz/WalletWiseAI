@@ -95,7 +95,7 @@ extension FilterView {
     
     var applyButton: some View {
         Button(action: {
-            print("Apply Button Pressed")
+            self.isPresented = false
         }, label: {
             Text(L10n.Transactions.Filters.buttonTitle)
                 .modifier(BlueButtonStyle(state: .enabled))

@@ -9,20 +9,26 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @State private var goToNotifications: Bool = false
+    @State private var goToTransaction: Bool = false
+    
     var body: some View {
-        ZStack(alignment:.center) {
-            Color(Asset.Colors.primaryLightGray.color)
-            VStack(alignment: .center, spacing: 15) {
-                topUserView
-                lineView
-                totalBalanceView
-                availableFundsView
-                summaryView
-                recentTransactionsView
+        NavStackHandler {
+            ZStack(alignment:.center) {
+                Color(Asset.Colors.primaryLightGray.color)
+                VStack(alignment: .center, spacing: 15) {
+                    topUserView
+                    lineView
+                    totalBalanceView
+                    availableFundsView
+                    summaryView
+                    recentTransactionsView
+                }
+                .padding(EdgeInsets(top: 55, leading: 0, bottom: 1, trailing: 0))
+                links
             }
-            .padding(EdgeInsets(top: 55, leading: 0, bottom: 1, trailing: 0))
+            .edgesIgnoringSafeArea([.top, .leading, .trailing])
         }
-        .edgesIgnoringSafeArea([.top, .leading, .trailing])
     }
     
     var topUserView: some View {
@@ -33,7 +39,7 @@ struct HomeView: View {
                 .foregroundColor(Color(Asset.Colors.heading.color))
             Spacer()
             Button(action: {
-                
+                self.goToNotifications = true
             }, label: {
                 Image(uiImage: Asset.Home.notificationIcon.image)
             })
@@ -160,6 +166,9 @@ struct HomeView: View {
                 LazyVStack(alignment: .leading) {
                     ForEach(0..<5, id: \.self) { _ in
                         TransactionRow()
+                            .onTapGesture {
+                                self.goToTransaction = true
+                            }
                     }
                 }
             }
@@ -167,13 +176,12 @@ struct HomeView: View {
         }
     }
     
-    var transactions: some View {
-        Section {
-            ForEach(0..<5, id: \.self) { _ in
-                TransactionRow()
-                    .listRowInsets(EdgeInsets(top: 5, leading: 20, bottom: 5, trailing: 20))
-                    .listRowBackground(Color(Asset.Colors.primaryLightGray.color))
-            }
+    var links: some View {
+        Group {
+            NavigationLink(destination: NotificationsView(), isActive: self.$goToNotifications) { EmptyView() }
+                .isDetailLink(false)
+            NavigationLink(destination: TransactionDetailsView(), isActive: self.$goToTransaction) { EmptyView() }
+                .isDetailLink(false)
         }
     }
 }

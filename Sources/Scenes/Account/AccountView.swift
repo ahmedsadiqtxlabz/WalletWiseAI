@@ -162,10 +162,8 @@ extension AccountView {
     }
     
     var links: some View {
-        Group {
             NavigationLink(destination: TransactionsHistoryView(), isActive: self.$goToTransactions) { EmptyView() }
                 .isDetailLink(false)
-        }
     }
 }
 

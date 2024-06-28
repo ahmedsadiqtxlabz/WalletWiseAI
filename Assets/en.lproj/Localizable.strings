@@ -69,13 +69,21 @@
 "transactions.filters.from" = "From";
 "transactions.filters.buttonTitle" = "Apply";
 "transactions.details.title" = "Transaction Details";
+"transactions.details.detailsViewTitle" = "Details";
 
 // MARK: - Expenses
 
 "expenses.title" = "Add Expense";
+"expenses.placeholders.picker" = "Upload receipt (Optional)";
+"expenses.placeholders.note" = "Add Note";
+"expenses.placeholders.amount" = "Add amount";
+"expenses.placeholders.category" = "Select Category";
 
 // MARK: - AI Recommendations
 
 "recommendations.title" = "AI Recommendations";
 "recommendations.description" = "AI analysis indicates that Indrive offers better value than Uber. Consider booking with Indrive in the future to save money upto 10%";
 
+// MARK: - Notifications
+
+"notifications.title" = "Notifications";
