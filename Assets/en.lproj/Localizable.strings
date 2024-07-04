@@ -8,6 +8,7 @@
 // MARK: - Global
 "global.done" = "Done";
 "global.cancel" = "Cancel";
+"global.expense" = "Expense";
 
 // MARK: - OnBoarding
 
@@ -87,3 +88,11 @@
 // MARK: - Notifications
 
 "notifications.title" = "Notifications";
+
+// MARK: - AI Insights
+
+"insights.title" = "AI Insights";
+
+// MARK: - Budget
+
+"budget.title" = "Budget Overview";

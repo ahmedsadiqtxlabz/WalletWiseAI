@@ -153,4 +153,3 @@ extension TransactionsHistoryView {
 #Preview {
     TransactionsHistoryView()
 }
-

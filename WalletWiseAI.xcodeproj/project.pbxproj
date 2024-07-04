@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F94ABE552C0EE6360030C5A3 /* FirebaseAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94ABE542C0EE6360030C5A3 /* FirebaseAuthentication.swift */; };
+		F94DF7512C3524E20037F5AE /* AIInsightsCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DF7502C3524E20037F5AE /* AIInsightsCategoryView.swift */; };
+		F94DF7532C35283D0037F5AE /* AIInsightsExpenseBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DF7522C35283D0037F5AE /* AIInsightsExpenseBar.swift */; };
+		F94DF7552C3550AB0037F5AE /* AIInsightsTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DF7542C3550AB0037F5AE /* AIInsightsTransactionView.swift */; };
 		F95197FA2BE39DE80053F7F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95197F72BE39DE80053F7F0 /* Assets.xcassets */; };
 		F95197FB2BE39DE80053F7F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95197F82BE39DE80053F7F0 /* Preview Assets.xcassets */; };
 		F95198002BE39E790053F7F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95197FF2BE39E790053F7F0 /* LaunchScreen.storyboard */; };
@@ -80,6 +83,9 @@
 
 /* Begin PBXFileReference section */
 		F94ABE542C0EE6360030C5A3 /* FirebaseAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthentication.swift; sourceTree = "<group>"; };
+		F94DF7502C3524E20037F5AE /* AIInsightsCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIInsightsCategoryView.swift; sourceTree = "<group>"; };
+		F94DF7522C35283D0037F5AE /* AIInsightsExpenseBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIInsightsExpenseBar.swift; sourceTree = "<group>"; };
+		F94DF7542C3550AB0037F5AE /* AIInsightsTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIInsightsTransactionView.swift; sourceTree = "<group>"; };
 		F95197E52BE39D640053F7F0 /* WalletWiseAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletWiseAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95197F72BE39DE80053F7F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F95197F82BE39DE80053F7F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -382,6 +388,9 @@
 			isa = PBXGroup;
 			children = (
 				F98C94722BEBAA3700C243F7 /* AIInsightsView.swift */,
+				F94DF7502C3524E20037F5AE /* AIInsightsCategoryView.swift */,
+				F94DF7522C35283D0037F5AE /* AIInsightsExpenseBar.swift */,
+				F94DF7542C3550AB0037F5AE /* AIInsightsTransactionView.swift */,
 			);
 			path = AIInsights;
 			sourceTree = "<group>";
@@ -604,6 +613,7 @@
 			files = (
 				F95198022BE39F0B0053F7F0 /* AppDelegate.swift in Sources */,
 				F9CCDDAA2C103B1400520347 /* Publisher+CollectionValidators.swift in Sources */,
+				F94DF7532C35283D0037F5AE /* AIInsightsExpenseBar.swift in Sources */,
 				F9CCDDA82C103ABF00520347 /* Publisher+FormValidators.swift in Sources */,
 				F9A0ED692C2C470F004BCC50 /* ImagePicker.swift in Sources */,
 				F98EA2622C29446900C76FBA /* TransactionDetailsView.swift in Sources */,
@@ -631,7 +641,9 @@
 				F94ABE552C0EE6360030C5A3 /* FirebaseAuthentication.swift in Sources */,
 				F9C5B6AE2C1C5E7000D44CD3 /* DateFormattingHelper.swift in Sources */,
 				F98C94762BEBAA7B00C243F7 /* BudgetView.swift in Sources */,
+				F94DF7552C3550AB0037F5AE /* AIInsightsTransactionView.swift in Sources */,
 				F95198212BE3BBC00053F7F0 /* BorderButtonStyle.swift in Sources */,
+				F94DF7512C3524E20037F5AE /* AIInsightsCategoryView.swift in Sources */,
 				F9A0ED702C2ED614004BCC50 /* DropDownTextField.swift in Sources */,
 				F96F31E42C2984A00094F83B /* WalletWiseDropDownTextField.swift in Sources */,
 				F9F7AD352BEA3F4600A10AB2 /* IntroView.swift in Sources */,

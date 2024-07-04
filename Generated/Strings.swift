@@ -26,6 +26,10 @@ internal enum L10n {
       internal static let plans = L10n.tr("Localizable", "accounts.options.plans", fallback: "Premium Plans")
     }
   }
+  internal enum Budget {
+    /// Budget Overview
+    internal static let title = L10n.tr("Localizable", "budget.title", fallback: "Budget Overview")
+  }
   internal enum Expenses {
     /// Add Expense
     internal static let title = L10n.tr("Localizable", "expenses.title", fallback: "Add Expense")
@@ -45,6 +49,8 @@ internal enum L10n {
     internal static let cancel = L10n.tr("Localizable", "global.cancel", fallback: "Cancel")
     /// Done
     internal static let done = L10n.tr("Localizable", "global.done", fallback: "Done")
+    /// Expense
+    internal static let expense = L10n.tr("Localizable", "global.expense", fallback: "Expense")
   }
   internal enum Home {
     /// Available Funds
@@ -59,6 +65,10 @@ internal enum L10n {
     internal static let summaryTitle = L10n.tr("Localizable", "home.summaryTitle", fallback: "Monthly Summary")
     /// Total Balance
     internal static let totalBalance = L10n.tr("Localizable", "home.totalBalance", fallback: "Total Balance")
+  }
+  internal enum Insights {
+    /// AI Insights
+    internal static let title = L10n.tr("Localizable", "insights.title", fallback: "AI Insights")
   }
   internal enum Notifications {
     /// Notifications

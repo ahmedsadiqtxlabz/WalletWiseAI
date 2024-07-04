@@ -19,6 +19,8 @@ struct AIRecommendationsView: View {
         }
         .padding(.top, 60)
         .background(Color(Asset.Colors.primaryLightGray.color))
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
         .edgesIgnoringSafeArea(.all)
     }
 }

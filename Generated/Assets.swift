@@ -30,6 +30,12 @@ internal enum Asset {
     internal static let settingsIcon = ImageAsset(name: "Accounts/settings-icon")
     internal static let transactionHistoryIcon = ImageAsset(name: "Accounts/transactionHistory-icon")
   }
+  internal enum Categories {
+    internal static let entertainmentIcon = ImageAsset(name: "Categories/entertainment-icon")
+    internal static let foodIcon = ImageAsset(name: "Categories/food-icon")
+    internal static let fuelIcon = ImageAsset(name: "Categories/fuel-icon")
+    internal static let shoppingIcon = ImageAsset(name: "Categories/shopping-icon")
+  }
   internal enum Colors {
     internal static let primaryBlue = ColorAsset(name: "Colors/PrimaryBlue")
     internal static let primaryLightGray = ColorAsset(name: "Colors/PrimaryLightGray")

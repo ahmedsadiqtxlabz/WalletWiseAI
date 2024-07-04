@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TransactionDetailsView: View {
+    
     struct DetailsData {
         let title: String
         let value: String
@@ -35,6 +36,7 @@ struct TransactionDetailsView: View {
 }
 
 extension TransactionDetailsView {
+    
     var headerView: some View {
         ZStack {
             HStack {
@@ -92,15 +94,16 @@ extension TransactionDetailsView {
     
     var detailsDataView: some View {
         ForEach(data, id: \.title) { data in
-            DetailsDataView(title: data.title, value: data.value) 
+            DetailsDataView(title: data.title, value: data.value)
         }
     }
 }
 
 fileprivate struct DetailsDataView: View {
+    
     var title: String
     var value: String
-
+    
     var body: some View {
         HStack {
             Text(title)
