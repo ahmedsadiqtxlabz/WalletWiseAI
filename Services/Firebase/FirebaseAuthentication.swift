@@ -83,7 +83,7 @@ final class FirebaseAuthentication: NSObject, ObservableObject {
                     let googleUser = result.user
                     
                     guard let idToken = googleUser.idToken?.tokenString else {
-                        throw NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Unexpected error occurred, please retry"])
+                        throw NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: L10n.Errors.general])
                     }
                     
                     let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: googleUser.accessToken.tokenString)
@@ -112,16 +112,16 @@ final class FirebaseAuthentication: NSObject, ObservableObject {
 extension FirebaseAuthentication {
     private func handleAuthError(_ error: NSError) -> String {
         guard let errorCode = AuthErrorCode.Code(rawValue: error.code) else {
-            return "Unknown error occurred. Please try again."
+            return L10n.Errors.general
         }
         
         switch errorCode {
         case .userNotFound:
-            return "No account found for this email. Please sign up."
+            return L10n.Errors.userNotFound
         case .userDisabled:
-            return "This account has been disabled. Please contact support."
+            return L10n.Errors.userDisabled
         case .invalidCredential:
-            return "Invalid credentials. Please try again."
+            return L10n.Errors.invalidCredential
         default:
             return "Error: \(error.localizedDescription)"
         }

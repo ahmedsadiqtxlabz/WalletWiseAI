@@ -10,6 +10,12 @@
 "global.cancel" = "Cancel";
 "global.expense" = "Expense";
 
+// MARK: - Errors
+"errors.general" = "Unknown error occurred. Please try again.";
+"errors.userNotFound" = "No account found for this email. Please sign up.";
+"errors.invalidCredential" = "Invalid credentials. Please try again.";
+"errors.userDisabled" = "This account has been disabled. Please contact support.";
+
 // MARK: - OnBoarding
 
 "onboarding.welcome.title" = "Welcome!";

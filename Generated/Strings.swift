@@ -30,6 +30,16 @@ internal enum L10n {
     /// Budget Overview
     internal static let title = L10n.tr("Localizable", "budget.title", fallback: "Budget Overview")
   }
+  internal enum Errors {
+    /// Unknown error occurred. Please try again.
+    internal static let general = L10n.tr("Localizable", "errors.general", fallback: "Unknown error occurred. Please try again.")
+    /// Invalid credentials. Please try again.
+    internal static let invalidCredential = L10n.tr("Localizable", "errors.invalidCredential", fallback: "Invalid credentials. Please try again.")
+    /// This account has been disabled. Please contact support.
+    internal static let userDisabled = L10n.tr("Localizable", "errors.userDisabled", fallback: "This account has been disabled. Please contact support.")
+    /// No account found for this email. Please sign up.
+    internal static let userNotFound = L10n.tr("Localizable", "errors.userNotFound", fallback: "No account found for this email. Please sign up.")
+  }
   internal enum Expenses {
     /// Add Expense
     internal static let title = L10n.tr("Localizable", "expenses.title", fallback: "Add Expense")
