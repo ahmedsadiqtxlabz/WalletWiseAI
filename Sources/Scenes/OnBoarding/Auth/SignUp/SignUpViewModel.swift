@@ -15,7 +15,9 @@ class SignUpViewModel: ObservableObject {
     @Published var email = ""
     @Published var fullName = ""
     @Published var password = ""
-    @Published var showMessage: Bool = false
+    @Published var showMessage = false
+    @Published var isLoading = false
+    @Published var goToNext = false
     @Published var errorMessage: String = "" {
         didSet {
             showMessage = errorMessage != "" ? true : false
@@ -49,16 +51,20 @@ class SignUpViewModel: ObservableObject {
     }
     
     func signUp() {
+        self.isLoading = true
         SystemServices.authentication.signUp(email: email, name: fullName, password: password)
             .sink(receiveCompletion: { completion in
+                self.isLoading = false
                 switch completion {
                 case .finished:
-                    print("Success")
+                    break
                 case .failure(let error):
+                    self.errorMessage = error.localizedDescription
                     print("Error: \(error.localizedDescription)")
                 }
-            }, receiveValue: {
-                print("Value Received")
+            }, receiveValue: { user in
+                DefaultsService.user = user
+                self.goToNext = true
             })
             .store(in: &disposables)
     }

@@ -14,6 +14,8 @@ class SignInViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
     @Published var showMessage: Bool = false
+    @Published var isLoading = false
+    @Published var goToNext = false
     @Published var errorMessage: String = "" {
         didSet {
             showMessage = errorMessage != "" ? true : false
@@ -39,32 +41,35 @@ class SignInViewModel: ObservableObject {
     }
     
     func signIn() {
+        self.isLoading = true
         SystemServices.authentication.signIn(email: email, password: password)
             .sink(receiveCompletion: { completion in
+                self.isLoading = false
                 switch completion {
                 case .finished:
-                    print("Success")
-                case .failure(let error):
-                    print("Error: \(error.localizedDescription)")
+                    break
+                case .failure(let error as NSError):
+                    self.errorMessage = error.domain
                 }
-            }, receiveValue: { name in
-                print(name)
+            }, receiveValue: { user in
+                DefaultsService.user = user
+                self.goToNext = true
             })
             .store(in: &disposables)
     }
     
     func signInGoogle() {
-        SystemServices.authentication.signInWithGoogle()
-            .sink(receiveCompletion: { completion in
-                switch completion {
-                case .finished:
-                    print("Success")
-                case .failure(let error):
-                    print("Error: \(error.localizedDescription)")
-                }
-            }, receiveValue: { _ in
-                print("Google Sign in")
-            })
-            .store(in: &disposables)
+        //        SystemServices.authentication.signInWithGoogle()
+        //            .sink(receiveCompletion: { completion in
+        //                switch completion {
+        //                case .finished:
+        //                    print("Success")
+        //                case .failure(let error):
+        //                    print("Error: \(error.localizedDescription)")
+        //                }
+        //            }, receiveValue: { _ in
+        //                print("Google Sign in")
+        //            })
+        //            .store(in: &disposables)
     }
 }

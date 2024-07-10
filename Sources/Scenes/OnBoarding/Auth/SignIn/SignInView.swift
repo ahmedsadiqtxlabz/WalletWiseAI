@@ -35,6 +35,9 @@ struct SignInView: View {
             }
         }
         .edgesIgnoringSafeArea(.all)
+        .onReceive(viewModel.$goToNext) { value in
+            self.goToIntro = value
+        }
     }
     
     var titleView: some View {
@@ -74,12 +77,15 @@ struct SignInView: View {
     
     var signInButton: some View {
         Button(action: {
-            self.goToIntro = true
+            if viewModel.isValid() {
+                viewModel.signIn()
+            }
         }, label: {
             Text(L10n.Onboarding.Welcome.signin)
                 .modifier(BlueButtonStyle(state: .enabled))
                 .font(Font.SFPro.semiBold(size: 17))
         })
+        .loadingViewStyle(isLoading: $viewModel.isLoading)
     }
     
     var continueView: some View {

@@ -14,13 +14,17 @@ struct RootView: View {
     
     private var rootView: some View {
         Group {
-            WelcomeView()
-                .onAppear {
-                    print("Root View Appeared")
-                }
-                .onDisappear {
-                    print("Root View Disappeared")
-                }
+            if DefaultsService.token.isEmpty {
+                WelcomeView()
+            } else {
+                MainView()
+            }
+        }
+        .onAppear {
+            print("Root View Appeared")
+        }
+        .onDisappear {
+            print("Root View Disappeared")
         }
     }
 }
