@@ -85,7 +85,7 @@ extension AIInsightsView {
     
     var recommendationsView: some View {
         Section {
-            LazyVStack(alignment: .leading) {
+            VStack(alignment: .leading) {
                 ForEach(0..<10, id: \.self) { _ in
                     AIInsightsTransactionView(goToRecomentation: $goToRecomendation, goToTransactionDetails: $goToTransaction)
                 }

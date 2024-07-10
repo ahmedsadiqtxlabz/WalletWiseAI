@@ -11,6 +11,8 @@ struct BudgetView: View {
     var body: some View {
         VStack {
             headerView
+            BudgetBarChartView()
+            BudgetPieChartView()
             Spacer()
         }
         .padding(EdgeInsets(top: 60, leading: 0, bottom: 85, trailing: 0))

@@ -35,6 +35,9 @@
 		F95198362BE4CD7A0053F7F0 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95198352BE4CD7A0053F7F0 /* RoundedCorner.swift */; };
 		F95198382BE4CDB90053F7F0 /* View+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95198372BE4CDB90053F7F0 /* View+Corners.swift */; };
 		F951983B2BE4E2100053F7F0 /* WalletWiseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951983A2BE4E2100053F7F0 /* WalletWiseTextField.swift */; };
+		F964BF1B2C3D158000DFF76C /* BudgetBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964BF1A2C3D158000DFF76C /* BudgetBarChartView.swift */; };
+		F964BF1D2C3D19B400DFF76C /* BudgetPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964BF1C2C3D19B400DFF76C /* BudgetPieChartView.swift */; };
+		F964BF1F2C3D1B4200DFF76C /* BudgetExpenseChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964BF1E2C3D1B4200DFF76C /* BudgetExpenseChartView.swift */; };
 		F96E33152C119E4500F22926 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F96E33142C119E4500F22926 /* FirebaseFirestore */; };
 		F96E33172C119E5600F22926 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F96E33162C119E5600F22926 /* FirebaseFirestoreSwift */; };
 		F96E33192C11CCD800F22926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F96E33182C11CCD800F22926 /* GoogleService-Info.plist */; };
@@ -112,6 +115,9 @@
 		F95198352BE4CD7A0053F7F0 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		F95198372BE4CDB90053F7F0 /* View+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Corners.swift"; sourceTree = "<group>"; };
 		F951983A2BE4E2100053F7F0 /* WalletWiseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseTextField.swift; sourceTree = "<group>"; };
+		F964BF1A2C3D158000DFF76C /* BudgetBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetBarChartView.swift; sourceTree = "<group>"; };
+		F964BF1C2C3D19B400DFF76C /* BudgetPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetPieChartView.swift; sourceTree = "<group>"; };
+		F964BF1E2C3D1B4200DFF76C /* BudgetExpenseChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetExpenseChartView.swift; sourceTree = "<group>"; };
 		F96E33182C11CCD800F22926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F96E331F2C11E18B00F22926 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		F96F31E12C2976ED0094F83B /* AddExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesView.swift; sourceTree = "<group>"; };
@@ -399,6 +405,9 @@
 			isa = PBXGroup;
 			children = (
 				F98C94752BEBAA7B00C243F7 /* BudgetView.swift */,
+				F964BF1A2C3D158000DFF76C /* BudgetBarChartView.swift */,
+				F964BF1C2C3D19B400DFF76C /* BudgetPieChartView.swift */,
+				F964BF1E2C3D1B4200DFF76C /* BudgetExpenseChartView.swift */,
 			);
 			path = Budget;
 			sourceTree = "<group>";
@@ -612,10 +621,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F95198022BE39F0B0053F7F0 /* AppDelegate.swift in Sources */,
+				F964BF1F2C3D1B4200DFF76C /* BudgetExpenseChartView.swift in Sources */,
 				F9CCDDAA2C103B1400520347 /* Publisher+CollectionValidators.swift in Sources */,
 				F94DF7532C35283D0037F5AE /* AIInsightsExpenseBar.swift in Sources */,
 				F9CCDDA82C103ABF00520347 /* Publisher+FormValidators.swift in Sources */,
 				F9A0ED692C2C470F004BCC50 /* ImagePicker.swift in Sources */,
+				F964BF1D2C3D19B400DFF76C /* BudgetPieChartView.swift in Sources */,
 				F98EA2622C29446900C76FBA /* TransactionDetailsView.swift in Sources */,
 				F951982D2BE3C53A0053F7F0 /* Fonts+Custom.swift in Sources */,
 				F95198042BE39FD60053F7F0 /* SceneDelegate.swift in Sources */,
@@ -646,6 +657,7 @@
 				F94DF7512C3524E20037F5AE /* AIInsightsCategoryView.swift in Sources */,
 				F9A0ED702C2ED614004BCC50 /* DropDownTextField.swift in Sources */,
 				F96F31E42C2984A00094F83B /* WalletWiseDropDownTextField.swift in Sources */,
+				F964BF1B2C3D158000DFF76C /* BudgetBarChartView.swift in Sources */,
 				F9F7AD352BEA3F4600A10AB2 /* IntroView.swift in Sources */,
 				F9CCDDAF2C103C7E00520347 /* SignUpViewModel.swift in Sources */,
 				F951982F2BE3F9CC0053F7F0 /* AuthView.swift in Sources */,
