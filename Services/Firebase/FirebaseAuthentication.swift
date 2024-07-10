@@ -9,6 +9,7 @@ import Foundation
 import FirebaseAuth
 import GoogleSignIn
 import Combine
+import FirebaseCore
 
 final class FirebaseAuthentication: NSObject, ObservableObject {
     
@@ -62,48 +63,49 @@ final class FirebaseAuthentication: NSObject, ObservableObject {
         .eraseToAnyPublisher()
     }
     
-    //    func signInWithGoogle() -> AnyPublisher<Void, Error> {
-    //        guard let clientID = FirebaseApp.app()?.options.clientID else {
-    //            fatalError("No Firebase clientID found")
-    //        }
-    //
-    //        let config = GIDConfiguration(clientID: clientID)
-    //        GIDSignIn.sharedInstance.configuration = config
-    //
-    //        return Future<Void, Error> { promise in
-    //            Task {
-    //                do {
-    //                    guard let scene = await UIApplication.shared.connectedScenes.first as? UIWindowScene,
-    //                          let rootViewController = await scene.windows.first?.rootViewController else {
-    //                        fatalError("There is no root view controller!")
-    //                    }
-    //
-    //                    let result = try await GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController)
-    //                    let googleUser = result.user
-    //
-    //                    guard let idToken = googleUser.idToken?.tokenString else {
-    //                        throw NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Unexpected error occurred, please retry"])
-    //                    }
-    //
-    //                    let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: googleUser.accessToken.tokenString)
-    //                    let authResult = try await Auth.auth().signIn(with: credential)
-    //
-    //                    let user = authResult.user
-    //
-    //                    let db = Firestore.firestore()
-    //                    try await db.collection("users").document(user.uid).setData([
-    //                        "name": googleUser.profile?.givenName ?? "",
-    //                        "email": googleUser.profile?.email ?? ""
-    //                    ])
-    //
-    //                    promise(.success(()))
-    //                } catch {
-    //                    promise(.failure(error))
-    //                }
-    //            }
-    //        }
-    //        .eraseToAnyPublisher()
-    //    }
+    func signInWithGoogle() -> AnyPublisher<User, Error> {
+        guard let clientID = FirebaseApp.app()?.options.clientID else {
+            fatalError("No Firebase clientID found")
+        }
+        
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
+        
+        return Future<User, Error> { promise in
+            Task {
+                do {
+                    guard let scene = await UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                          let rootViewController = await scene.windows.first?.rootViewController else {
+                        fatalError("There is no root view controller!")
+                    }
+                    
+                    let result = try await GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController)
+                    let googleUser = result.user
+                    
+                    guard let idToken = googleUser.idToken?.tokenString else {
+                        throw NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Unexpected error occurred, please retry"])
+                    }
+                    
+                    let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: googleUser.accessToken.tokenString)
+                    let authResult = try await Auth.auth().signIn(with: credential)
+                    
+                    let user = authResult.user
+                    let data = User(
+                        name: googleUser.profile?.name ?? "",
+                        email: googleUser.profile?.email ?? "")
+                    DefaultsService.token = user.uid
+                    FirebaseDatabase.saveUser(id: user.uid, user: data) {
+                        promise(.success(data))
+                    } failure: { error in
+                        promise(.failure(error))
+                    }
+                } catch {
+                    promise(.failure(error))
+                }
+            }
+        }
+        .eraseToAnyPublisher()
+    }
     
 }
 
@@ -112,7 +114,7 @@ extension FirebaseAuthentication {
         guard let errorCode = AuthErrorCode.Code(rawValue: error.code) else {
             return "Unknown error occurred. Please try again."
         }
-
+        
         switch errorCode {
         case .userNotFound:
             return "No account found for this email. Please sign up."

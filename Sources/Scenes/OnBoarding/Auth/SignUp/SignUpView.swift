@@ -106,7 +106,7 @@ struct SignUpView: View {
             HStack(alignment: .center, spacing: 25) {
                 Group {
                     Button(action: {
-                        
+                        viewModel.signupGoogle()
                     }, label: {
                         Image(uiImage: Asset.OnBoarding.googleIcon.image)
                                         .resizable()

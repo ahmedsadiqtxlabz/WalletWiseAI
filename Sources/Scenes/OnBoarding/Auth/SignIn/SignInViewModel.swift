@@ -59,17 +59,21 @@ class SignInViewModel: ObservableObject {
     }
     
     func signInGoogle() {
-        //        SystemServices.authentication.signInWithGoogle()
-        //            .sink(receiveCompletion: { completion in
-        //                switch completion {
-        //                case .finished:
-        //                    print("Success")
-        //                case .failure(let error):
-        //                    print("Error: \(error.localizedDescription)")
-        //                }
-        //            }, receiveValue: { _ in
-        //                print("Google Sign in")
-        //            })
-        //            .store(in: &disposables)
+        self.isLoading = true
+        SystemServices.authentication.signInWithGoogle()
+            .sink(receiveCompletion: { completion in
+                self.isLoading = false
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    print("Error: \(error.localizedDescription)")
+                    self.errorMessage = error.localizedDescription
+                }
+            }, receiveValue: { user in
+                DefaultsService.user = user
+                self.goToNext = true
+            })
+            .store(in: &disposables)
     }
 }

@@ -68,4 +68,23 @@ class SignUpViewModel: ObservableObject {
             })
             .store(in: &disposables)
     }
+    
+    func signupGoogle() {
+        self.isLoading = true
+        SystemServices.authentication.signInWithGoogle()
+            .sink(receiveCompletion: { completion in
+                self.isLoading = false
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    print("Error: \(error.localizedDescription)")
+                    self.errorMessage = error.localizedDescription
+                }
+            }, receiveValue: { user in
+                DefaultsService.user = user
+                self.goToNext = true
+            })
+            .store(in: &disposables)
+    }
 }
