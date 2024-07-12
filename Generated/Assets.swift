@@ -63,7 +63,6 @@ internal enum Asset {
     internal static let appleIcon = ImageAsset(name: "OnBoarding/apple-icon")
     internal static let authBackground = ImageAsset(name: "OnBoarding/auth-background")
     internal static let emailIcon = ImageAsset(name: "OnBoarding/email-icon")
-    internal static let facebookIcon = ImageAsset(name: "OnBoarding/facebook-icon")
     internal static let googleIcon = ImageAsset(name: "OnBoarding/google-icon")
     internal static let passwordIcon = ImageAsset(name: "OnBoarding/password-icon")
     internal static let usernameIcon = ImageAsset(name: "OnBoarding/username-icon")

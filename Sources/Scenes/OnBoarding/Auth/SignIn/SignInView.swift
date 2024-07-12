@@ -124,22 +124,9 @@ struct SignInView: View {
                         .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
                 })
                 Button(action: {
-                    
+                    viewModel.signInApple()
                 }, label: {
                     Image(uiImage: Asset.OnBoarding.appleIcon.image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(.blue)
-                        .padding(15)
-                        .background(Color.white)
-                        .cornerRadius(30, corners: .allCorners)
-                        .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
-                })
-                Button(action: {
-                    
-                }, label: {
-                    Image(uiImage: Asset.OnBoarding.facebookIcon.image)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 30, height: 30)

@@ -10,6 +10,8 @@ import FirebaseAuth
 import GoogleSignIn
 import Combine
 import FirebaseCore
+import CryptoKit
+import AuthenticationServices
 
 final class FirebaseAuthentication: NSObject, ObservableObject {
     
@@ -107,9 +109,40 @@ final class FirebaseAuthentication: NSObject, ObservableObject {
         .eraseToAnyPublisher()
     }
     
+    func signInWithApple() -> AnyPublisher<User, Error> {
+        return Future<User, Error> { promise in
+            
+            AppleAuthentication.shared.signInWithApple { credentials in
+                Auth.auth().signIn(with: credentials) { authResult, error in
+                    if let error = error {
+                        promise(.failure(error))
+                        return
+                    }
+                    
+                    guard let user = authResult?.user else {
+                        promise(.failure(NSError(domain: "SignInError", code: -1, userInfo: [NSLocalizedDescriptionKey: "Failed to retrieve user."])))
+                        return
+                    }
+                    
+                    let data = User(name: user.displayName ?? "", email: user.email ?? "")
+                    DefaultsService.token = user.uid
+                    
+                    FirebaseDatabase.saveUser(id: user.uid, user: data) {
+                        promise(.success(data))
+                    } failure: { error in
+                        promise(.failure(error))
+                    }
+                }
+            } onError: { error in
+                promise(.failure(error))
+            }
+        }
+        .eraseToAnyPublisher()
+    }
 }
 
 extension FirebaseAuthentication {
+    
     private func handleAuthError(_ error: NSError) -> String {
         guard let errorCode = AuthErrorCode.Code(rawValue: error.code) else {
             return L10n.Errors.general
