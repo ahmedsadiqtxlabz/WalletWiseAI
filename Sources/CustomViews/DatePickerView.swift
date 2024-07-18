@@ -9,9 +9,10 @@ import Foundation
 import SwiftUI
 
 struct DatePickerView: View {
+    
     @Binding var date: Date
     var onClose: () -> Void
-
+    
     var body: some View {
         ZStack(alignment: .center) {
             Color.black.opacity(0.7)

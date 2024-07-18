@@ -71,5 +71,7 @@ extension AIInsightsTransactionView {
 }
 
 #Preview {
-    AIInsightsTransactionView(goToRecomentation: Binding.constant(false), goToTransactionDetails: Binding.constant(false))
+    AIInsightsTransactionView(
+        goToRecomentation: Binding.constant(false),
+        goToTransactionDetails: Binding.constant(false))
 }

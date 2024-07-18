@@ -20,6 +20,7 @@ struct AIInsightsExpenseBar: View {
                 .stroke(Color.blue, style: StrokeStyle(lineWidth: 22, lineCap: .square))
                 .rotationEffect(Angle(degrees: 135))
                 .frame(width: 160, height: 160)
+            
             Circle()
                 .trim(from: 0.0, to: (progress * 0.75))
                 .stroke(Color.white, style: StrokeStyle(lineWidth: 10, lineCap: .round))

@@ -103,50 +103,50 @@ struct SignUpView: View {
     }
     
     var socialIconsView: some View {
-            HStack(alignment: .center, spacing: 25) {
-                Group {
-                    Button(action: {
-                        viewModel.signupGoogle()
-                    }, label: {
-                        Image(uiImage: Asset.OnBoarding.googleIcon.image)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 30, height: 30)
-                                        .foregroundColor(.blue)
-                                        .padding(15)
-                                        .background(Color.white)
-                                        .cornerRadius(30, corners: .allCorners)
-                                        .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
-                    })
-                    Button(action: {
-                        viewModel.signUpApple()
-                    }, label: {
-                        Image(uiImage: Asset.OnBoarding.appleIcon.image)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 30, height: 30)
-                                        .foregroundColor(.blue)
-                                        .padding(15)
-                                        .background(Color.white)
-                                        .cornerRadius(30, corners: .allCorners)
-                                        .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
-                    })
-                }
+        HStack(alignment: .center, spacing: 25) {
+            Group {
+                Button(action: {
+                    viewModel.signupGoogle()
+                }, label: {
+                    Image(uiImage: Asset.OnBoarding.googleIcon.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.blue)
+                        .padding(15)
+                        .background(Color.white)
+                        .cornerRadius(30, corners: .allCorners)
+                        .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
+                })
+                Button(action: {
+                    viewModel.signUpApple()
+                }, label: {
+                    Image(uiImage: Asset.OnBoarding.appleIcon.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.blue)
+                        .padding(15)
+                        .background(Color.white)
+                        .cornerRadius(30, corners: .allCorners)
+                        .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
+                })
             }
+        }
     }
     
     var noAccountView: some View {
-            HStack(alignment: .center, spacing: 5) {
-                Text(L10n.Onboarding.Signin.haveAccount)
-                    .font(Font.SFPro.regular(size: 16))
-                    .foregroundColor(.gray)
-                Button(action: {
-                    self.shouldSignIn = true
-                }, label: {
-                    Text(L10n.Onboarding.Welcome.signin)
-                        .font(Font.SFPro.bold(size: 16))
-                })
-            }
+        HStack(alignment: .center, spacing: 5) {
+            Text(L10n.Onboarding.Signin.haveAccount)
+                .font(Font.SFPro.regular(size: 16))
+                .foregroundColor(.gray)
+            Button(action: {
+                self.shouldSignIn = true
+            }, label: {
+                Text(L10n.Onboarding.Welcome.signin)
+                    .font(Font.SFPro.bold(size: 16))
+            })
+        }
         .padding(.bottom, 40)
     }
 }

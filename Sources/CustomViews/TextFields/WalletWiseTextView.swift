@@ -28,7 +28,6 @@ struct WalletWiseTextView: UIViewRepresentable {
         Coordinator(self)
     }
     
-    // Step 2: Create the UITextView
     func makeUIView(context: Context) -> UITextView {
         let textView = UITextView()
         textView.textColor = .black
@@ -39,7 +38,6 @@ struct WalletWiseTextView: UIViewRepresentable {
         return textView
     }
     
-    // Step 3: Update the UITextView
     func updateUIView(_ uiView: UITextView, context: Context) {
         uiView.text = text
     }

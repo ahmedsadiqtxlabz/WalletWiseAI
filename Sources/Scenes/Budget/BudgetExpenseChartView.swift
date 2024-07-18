@@ -10,7 +10,7 @@ import SwiftUI
 struct BudgetExpenseChartView: View {
     @State var choice = "Monthly"
     var options = ["Daily", "Monthly", "Yearly"]
-
+    
     var body: some View {
         VStack {
             picker
@@ -21,7 +21,7 @@ struct BudgetExpenseChartView: View {
         .padding(.horizontal, 16)
         .padding(.vertical, 10)
     }
-
+    
     var picker: some View {
         HStack(spacing: 10) {
             ForEach(options, id: \.self) { option in
@@ -36,11 +36,11 @@ struct BudgetExpenseChartView: View {
                         .background(choice == option ? Color.blue : Color.gray.opacity(0.1))
                         .clipShape(RoundedRectangle(cornerSize: CGSize(width: 8, height: 8)))
                 }
-
             }
         }
     }
 }
+
 #Preview {
     BudgetExpenseChartView()
 }

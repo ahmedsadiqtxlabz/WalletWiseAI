@@ -257,6 +257,7 @@
 		F95197FC2BE39E010053F7F0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F960307B2C45971100CF6B74 /* OpenAI */,
 				F9F49DF92C3E5E7E0032A6C0 /* Defaults */,
 				F9CCDDA62C103AA300520347 /* Validators */,
 				F94ABE532C0EE6140030C5A3 /* Firebase */,
@@ -379,6 +380,13 @@
 				F9A0ED6C2C2D6C15004BCC50 /* WalletWiseTextView.swift */,
 			);
 			path = TextFields;
+			sourceTree = "<group>";
+		};
+		F960307B2C45971100CF6B74 /* OpenAI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OpenAI;
 			sourceTree = "<group>";
 		};
 		F96E33132C119E4500F22926 /* Frameworks */ = {

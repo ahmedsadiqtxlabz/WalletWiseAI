@@ -47,12 +47,12 @@ struct MainView: View {
                 
                 accountTab
             }
-                Button(action: {
-                    self.showAddExpenseView = true
-                }, label: {
-                    Image(uiImage: Asset.TabBar.floatAddButton.image)
-                        .padding(.leading, 3)
-                })
+            Button(action: {
+                self.showAddExpenseView = true
+            }, label: {
+                Image(uiImage: Asset.TabBar.floatAddButton.image)
+                    .padding(.leading, 3)
+            })
             .padding(.bottom, 60)
         }
         .navigationBarHidden(true)

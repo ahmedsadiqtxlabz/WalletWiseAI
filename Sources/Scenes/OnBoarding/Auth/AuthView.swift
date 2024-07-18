@@ -15,7 +15,7 @@ struct AuthView: View {
             Image(uiImage: Asset.OnBoarding.authBackground.image)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-            .background(Color.red)
+                .background(Color.red)
             VStack(alignment: .center) {
                 Spacer()
                 if shouldSignIn {
@@ -38,10 +38,10 @@ struct AuthView: View {
 
 extension AuthView {
     var links: some View {
-        Group {
-            NavigationLink(destination: IntroView(viewControllers: IntroInfo), isActive: self.$goToIntro) { EmptyView() }
-                .isDetailLink(false)
-        }
+        NavigationLink(
+            destination: IntroView(viewControllers: IntroInfo),
+            isActive: self.$goToIntro) { EmptyView() }
+            .isDetailLink(false)
     }
 }
 

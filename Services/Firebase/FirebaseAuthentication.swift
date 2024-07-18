@@ -76,8 +76,9 @@ final class FirebaseAuthentication: NSObject, ObservableObject {
         return Future<User, Error> { promise in
             Task {
                 do {
-                    guard let scene = await UIApplication.shared.connectedScenes.first as? UIWindowScene,
-                          let rootViewController = await scene.windows.first?.rootViewController else {
+                    guard let scene = await MainActor.run(body: {UIApplication.shared.connectedScenes.first as? UIWindowScene}),
+                          let rootViewController = await MainActor.run(body: {
+                              scene.windows.first?.rootViewController}) else {
                         fatalError("There is no root view controller!")
                     }
                     

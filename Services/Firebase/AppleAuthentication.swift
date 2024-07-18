@@ -10,7 +10,7 @@ import CryptoKit
 import AuthenticationServices
 import FirebaseAuth
 
-final class AppleAuthentication: NSObject {
+final class AppleAuthentication: NSObject, ObservableObject {
     
     static let shared = AppleAuthentication()
     
@@ -23,18 +23,20 @@ final class AppleAuthentication: NSObject {
     func signInWithApple(
         onSuccess: @escaping (AuthCredential) -> Void,
         onError: @escaping (Error) -> Void) {
-            self.successHandler = onSuccess
-            self.errorHandler = onError
-            let nonce = randomNonceString()
-            self.currentNonce = nonce
-            let appleIDProvider = ASAuthorizationAppleIDProvider()
-            let request = appleIDProvider.createRequest()
-            request.requestedScopes = [.fullName, .email]
-            request.nonce = sha256(nonce)
-            
-            let authorizationController = ASAuthorizationController(authorizationRequests: [request])
-            authorizationController.delegate = self
-            authorizationController.performRequests()
+            DispatchQueue.main.async {
+                self.successHandler = onSuccess
+                self.errorHandler = onError
+                let nonce = self.randomNonceString()
+                self.currentNonce = nonce
+                let appleIDProvider = ASAuthorizationAppleIDProvider()
+                let request = appleIDProvider.createRequest()
+                request.requestedScopes = [.fullName, .email]
+                request.nonce = self.sha256(nonce)
+                
+                let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+                authorizationController.delegate = self
+                authorizationController.performRequests()
+            }
         }
     
 }

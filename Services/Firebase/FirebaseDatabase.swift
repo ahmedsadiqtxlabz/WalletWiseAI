@@ -9,7 +9,7 @@ import Foundation
 import FirebaseFirestore
 import FirebaseCore
 
-class FirebaseDatabase {
+final class FirebaseDatabase: NSObject, ObservableObject {
     
     private enum Keys: String {
         case users

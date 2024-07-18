@@ -15,7 +15,7 @@ struct MessageView: View {
     var isError: Bool
     
     var body: some View {
-
+        
         Capsule(style: .continuous)
             .fill(isError == true ? Color.red : Color(Asset.Colors.primaryBlue.color))
             .frame(height: 45.0)
@@ -35,10 +35,10 @@ struct MessageView: View {
             .onAppear(perform: {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
                     self.showMessage = false
+                })
             })
-        })
     }
-
+    
 }
 
 struct MessageView_Previews: PreviewProvider {

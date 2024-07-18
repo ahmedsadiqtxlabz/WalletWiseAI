@@ -7,7 +7,6 @@
 
 import UIKit
 
-// Protocol to handle dropdown selection in SwiftUI
 protocol DropDownTextFieldDelegate: AnyObject {
     func dropdown(textField: DropDownTextField, selectedItem: String)
 }
@@ -55,7 +54,7 @@ class DropDownTextField: UITextField, UITextFieldDelegate, UIPickerViewDelegate,
         self.endEditing(true)
     }
 
-    // MARK: Picker
+    // MARK: - Picker
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

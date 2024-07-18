@@ -9,13 +9,12 @@ import Foundation
 import Combine
 
 extension Publisher where Self.Output == String, Self.Failure == Never {
-
-  // TODO: pull in password valid code
-  var passwordValid: AnyPublisher<Bool, Never> {
-    self.isNotEmpty()
-  }
-
-  var emailValid: AnyPublisher<Bool, Never> {
-    self.map { $0.isValidEmail() }.eraseToAnyPublisher()
-  }
+    
+    var passwordValid: AnyPublisher<Bool, Never> {
+        self.isNotEmpty()
+    }
+    
+    var emailValid: AnyPublisher<Bool, Never> {
+        self.map { $0.isValidEmail() }.eraseToAnyPublisher()
+    }
 }

@@ -17,8 +17,12 @@ struct AccountView: View {
     @State var goToTransactions: Bool = false
     
     let options: [Option] = [
-        Option(icon: Asset.Accounts.transactionHistoryIcon.image, title: L10n.Accounts.Options.history),
-        Option(icon: Asset.Accounts.premiumPlanIcon.image, title: L10n.Accounts.Options.plans)
+        Option(
+            icon: Asset.Accounts.transactionHistoryIcon.image,
+            title: L10n.Accounts.Options.history),
+        Option(
+            icon: Asset.Accounts.premiumPlanIcon.image,
+            title: L10n.Accounts.Options.plans)
     ]
     
     var body: some View {
@@ -145,6 +149,7 @@ extension AccountView {
             Rectangle()
                 .foregroundColor(Color(Asset.Colors.primaryWhite.color))
                 .cornerRadius(10, corners: .allCorners)
+            
             VStack(spacing: 10) {
                 HStack{
                     Text(L10n.Accounts.expenses)
@@ -162,8 +167,10 @@ extension AccountView {
     }
     
     var links: some View {
-            NavigationLink(destination: TransactionsHistoryView(), isActive: self.$goToTransactions) { EmptyView() }
-                .isDetailLink(false)
+        NavigationLink(
+            destination: TransactionsHistoryView(),
+            isActive: self.$goToTransactions) { EmptyView() }
+            .isDetailLink(false)
     }
 }
 

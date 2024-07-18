@@ -26,7 +26,6 @@ class User: Codable, DefaultsSerializable {
         self.init(name: name, email: email, image: image)
     }
     
-    // Custom encoder to encode User object to a dictionary
     func encode() -> [String: Any] {
         let encoder = JSONEncoder()
         if let encodedData = try? encoder.encode(self),

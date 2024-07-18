@@ -20,11 +20,5 @@ struct RootView: View {
                 MainView()
             }
         }
-        .onAppear {
-            print("Root View Appeared")
-        }
-        .onDisappear {
-            print("Root View Disappeared")
-        }
     }
 }

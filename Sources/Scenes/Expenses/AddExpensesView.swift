@@ -17,7 +17,7 @@ struct AddExpensesView: View {
     @State private var note: String = ""
     @State private var category: String = ""
     @State private var date: Date = Date()
-    private let itemsList = ["Shopping", "Food", "Travel"]
+    private let itemsList = ["Shopping", "Food", "Travel", "Entertainment", "Other"]
     
     var body: some View {
         ZStack {
@@ -73,8 +73,11 @@ extension AddExpensesView {
                 Image(uiImage: Asset.downArrow.image)
             }
             .padding(.trailing, 15)
-            DropDownTextFieldWrapper(selectedItem: $category, itemsList: itemsList, placeholder: L10n.Expenses.Placeholders.category)
-                .padding(.leading, 15)
+            DropDownTextFieldWrapper(
+                selectedItem: $category,
+                itemsList: itemsList,
+                placeholder: L10n.Expenses.Placeholders.category)
+            .padding(.leading, 15)
         }
         .frame(height: 55)
     }

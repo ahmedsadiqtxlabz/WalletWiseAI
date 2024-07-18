@@ -53,6 +53,7 @@ class SignUpViewModel: ObservableObject {
     func signUp() {
         self.isLoading = true
         SystemServices.authentication.signUp(email: email, name: fullName, password: password)
+            .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 self.isLoading = false
                 switch completion {
@@ -72,6 +73,7 @@ class SignUpViewModel: ObservableObject {
     func signupGoogle() {
         self.isLoading = true
         SystemServices.authentication.signInWithGoogle()
+            .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 self.isLoading = false
                 switch completion {
@@ -91,6 +93,7 @@ class SignUpViewModel: ObservableObject {
     func signUpApple() {
         self.isLoading = true
         SystemServices.authentication.signInWithApple()
+            .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 self.isLoading = false
                 switch completion {

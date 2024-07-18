@@ -178,9 +178,14 @@ struct HomeView: View {
     
     var links: some View {
         Group {
-            NavigationLink(destination: NotificationsView(), isActive: self.$goToNotifications) { EmptyView() }
+            NavigationLink(
+                destination: NotificationsView(),
+                isActive: self.$goToNotifications) { EmptyView() }
                 .isDetailLink(false)
-            NavigationLink(destination: TransactionDetailsView(), isActive: self.$goToTransaction) { EmptyView() }
+            
+            NavigationLink(
+                destination: TransactionDetailsView(),
+                isActive: self.$goToTransaction) { EmptyView() }
                 .isDetailLink(false)
         }
     }

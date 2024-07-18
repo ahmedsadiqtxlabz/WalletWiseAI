@@ -86,9 +86,9 @@ extension WelcomeView {
     }
     
     var links: some View {
-        Group {
-            NavigationLink(destination: AuthView(shouldSignIn: self.shouldSignIn), isActive: self.$goToAuth) { EmptyView() }
-                .isDetailLink(false)
-        }
+        NavigationLink(
+            destination: AuthView(shouldSignIn: self.shouldSignIn),
+            isActive: self.$goToAuth) { EmptyView() }
+            .isDetailLink(false)
     }
 }

@@ -63,7 +63,9 @@ var infoView: some View {
         
     }
     .frame(height: 180)
-    .padding(EdgeInsets(top: 60, leading: 15, bottom: 0, trailing: 15))
+    .padding(EdgeInsets(
+        top: 60, leading: 15,
+        bottom: 0, trailing: 15))
 }
 
 #Preview {

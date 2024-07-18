@@ -7,23 +7,22 @@
 
 import SwiftUI
 
-// Note: Attach to the text inside the button instead of the button itself.
 struct BlueButtonStyle: ViewModifier {
-
-  enum State {
-    case enabled
-    case disabled
-  }
-
-  let state: State
-
-  func body(content: Content) -> some View {
-    content
-      .frame(minWidth: 0, maxWidth: .infinity)
-      .padding()
-      .foregroundColor(Color(Asset.Colors.primaryWhite.color))
-      .background(self.state == .enabled ? Color(Asset.Colors.primaryBlue.color) : Color(Asset.Colors.disabled.color))
-      .cornerRadius(10, corners: .allCorners)
-  }
+    
+    enum State {
+        case enabled
+        case disabled
+    }
+    
+    let state: State
+    
+    func body(content: Content) -> some View {
+        content
+            .frame(minWidth: 0, maxWidth: .infinity)
+            .padding()
+            .foregroundColor(Color(Asset.Colors.primaryWhite.color))
+            .background(self.state == .enabled ? Color(Asset.Colors.primaryBlue.color) : Color(Asset.Colors.disabled.color))
+            .cornerRadius(10, corners: .allCorners)
+    }
 }
 

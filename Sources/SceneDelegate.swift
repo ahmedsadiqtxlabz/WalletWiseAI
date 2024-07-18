@@ -19,7 +19,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = scene as? UIWindowScene else { return }
         
-        // Create the SwiftUI view that provides the window contents.
         let contentView = RootView()
             .modifier(SystemServices())
         

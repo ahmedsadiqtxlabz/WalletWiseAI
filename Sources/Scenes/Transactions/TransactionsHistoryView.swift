@@ -91,8 +91,8 @@ extension TransactionsHistoryView {
                         isPresented: $isShowingFilters, fromDate: $fromDate,
                         toDate: $toDate, showFromDatePicker: $showFromDatePicker,
                         showToDatePicker: $showToDatePicker)
-                        .transition(.move(edge: .bottom))
-                        .animation(.easeInOut)
+                    .transition(.move(edge: .bottom))
+                    .animation(.easeInOut)
                 }
             }
         }
@@ -131,9 +131,9 @@ extension TransactionsHistoryView {
     }
     
     var fromDatePickerView: some View {
-            DatePickerView(date: $fromDate) {
-                self.showFromDatePicker = false
-            }
+        DatePickerView(date: $fromDate) {
+            self.showFromDatePicker = false
+        }
     }
     
     var toDatePickerView: some View {
@@ -144,7 +144,9 @@ extension TransactionsHistoryView {
     
     var links: some View {
         Group {
-            NavigationLink(destination: TransactionDetailsView(), isActive: self.$goToDetails) { EmptyView() }
+            NavigationLink(
+                destination: TransactionDetailsView(),
+                isActive: self.$goToDetails) { EmptyView() }
                 .isDetailLink(false)
         }
     }

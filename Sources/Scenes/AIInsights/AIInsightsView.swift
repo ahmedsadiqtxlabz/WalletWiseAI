@@ -64,7 +64,9 @@ extension AIInsightsView {
                     AIInsightsCategoryView(title: category.title, icon: category.icon)
                 }
             }
-            .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
+            .padding(EdgeInsets(
+                top: 0, leading: 15,
+                bottom: 0, trailing: 15))
         }
         .frame(height: 90)
     }
@@ -75,19 +77,26 @@ extension AIInsightsView {
                 .foregroundColor(Color(Asset.Colors.primaryWhite.color))
                 .cornerRadius(10, corners: .allCorners)
             VStack {
-                AIInsightsExpenseBar(progress: 0.75, totalExpense: 15000, title: L10n.Global.expense)
+                AIInsightsExpenseBar(
+                    progress: 0.75,
+                    totalExpense: 15000,
+                    title: L10n.Global.expense)
             }
             .padding(.top, 20)
         }
         .frame(height: 200)
-        .padding(EdgeInsets(top: 30, leading: 15, bottom: 0, trailing: 15))
+        .padding(EdgeInsets(
+            top: 30, leading: 15,
+            bottom: 0, trailing: 15))
     }
     
     var recommendationsView: some View {
         Section {
             VStack(alignment: .leading) {
                 ForEach(0..<10, id: \.self) { _ in
-                    AIInsightsTransactionView(goToRecomentation: $goToRecomendation, goToTransactionDetails: $goToTransaction)
+                    AIInsightsTransactionView(
+                        goToRecomentation: $goToRecomendation,
+                        goToTransactionDetails: $goToTransaction)
                 }
             }
             .padding(.horizontal, 10)
@@ -96,13 +105,15 @@ extension AIInsightsView {
     
     var links: some View {
         Group {
-            NavigationLink(destination: TransactionDetailsView(), isActive: self.$goToTransaction) { EmptyView() }
+            NavigationLink(
+                destination: TransactionDetailsView(), isActive: self.$goToTransaction) { EmptyView() }
                 .isDetailLink(false)
-            NavigationLink(destination: AIRecommendationsView(), isActive: self.$goToRecomendation) { EmptyView() }
+            
+            NavigationLink(
+                destination: AIRecommendationsView(), isActive: self.$goToRecomendation) { EmptyView() }
                 .isDetailLink(false)
         }
     }
-    
 }
 
 #Preview {

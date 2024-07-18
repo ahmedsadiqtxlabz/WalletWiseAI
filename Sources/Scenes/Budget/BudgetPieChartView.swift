@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Collection {
-    /// Returns the element at the specified index if it is within bounds, otherwise nil.
+    
     subscript (safe index: Index) -> Element? {
         return indices.contains(index) ? self[index] : nil
     }
@@ -44,7 +44,6 @@ struct PieShape: Shape {
 }
 
 struct BudgetPieChartView: View {
-    // sum of all the values should be 100
     let chartData: [PieData] = [PieData(color: .orange, value: 60, name: "Food", allowedValue: "$100-60%"),
                            PieData(color: .pink, value: 20, name: "Shopping", allowedValue: "$60-20%"),
                            PieData(color: .purple, value: 10, name: "Entertainment", allowedValue: "$40-10%"),

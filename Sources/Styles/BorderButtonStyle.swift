@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-// Note: Attach to the text inside the button instead of the button itself.
 struct BorderButtonStyle: ViewModifier {
     
     enum State {
@@ -26,6 +25,7 @@ struct BorderButtonStyle: ViewModifier {
             .foregroundColor(color)
             .background(Color.clear)
             .cornerRadius(10, corners: .allCorners)
-            .overlay(RoundedRectangle(cornerRadius: 10).stroke(strokeColor, lineWidth: 2))
+            .overlay(RoundedRectangle(
+                cornerRadius: 10).stroke(strokeColor, lineWidth: 2))
     }
 }
