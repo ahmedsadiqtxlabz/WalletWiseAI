@@ -2,7 +2,7 @@
 //  MessageView.swift
 //  WalletWiseAI
 //
-//  Created by Hannan Khan on 04/06/2024.
+//  Created by Muhammad Arslan on 04/06/2024.
 //
 
 import SwiftUI

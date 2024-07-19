@@ -2,7 +2,7 @@
 //  PageControl.swift
 //  WalletWiseAI
 //
-//  Created by Hannan Khan on 07/05/2024.
+//  Created by Muhammad Arslan on 07/05/2024.
 //
 
 import SwiftUI

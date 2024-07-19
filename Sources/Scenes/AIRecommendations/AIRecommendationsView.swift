@@ -2,7 +2,7 @@
 //  AIRecommendationsView.swift
 //  WalletWiseAI
 //
-//  Created by Hannan Khan on 26/06/2024.
+//  Created by Muhammad Arslan on 26/06/2024.
 //
 
 import SwiftUI

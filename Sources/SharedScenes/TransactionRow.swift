@@ -2,7 +2,7 @@
 //  TransactionRow.swift
 //  WalletWiseAI
 //
-//  Created by Hannan Khan on 10/05/2024.
+//  Created by Muhammad Arslan on 10/05/2024.
 //
 
 import SwiftUI

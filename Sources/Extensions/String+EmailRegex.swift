@@ -2,7 +2,7 @@
 //  String+EmailRegex.swift
 //  WalletWiseAI
 //
-//  Created by Hannan Khan on 05/06/2024.
+//  Created by Muhammad Arslan on 05/06/2024.
 //
 
 import Foundation

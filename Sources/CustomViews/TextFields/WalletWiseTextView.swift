@@ -2,7 +2,7 @@
 //  WalletWiseTextView.swift
 //  WalletWiseAI
 //
-//  Created by Hannan Khan on 27/06/2024.
+//  Created by Muhammad Arslan on 27/06/2024.
 //
 
 import UIKit

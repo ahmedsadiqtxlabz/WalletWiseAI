@@ -2,7 +2,7 @@
 //  WalletWiseTextField.swift
 //  WalletWiseAI
 //
-//  Created by Hannan Khan on 03/05/2024.
+//  Created by Muhammad Arslan on 03/05/2024.
 //
 
 import SwiftUI

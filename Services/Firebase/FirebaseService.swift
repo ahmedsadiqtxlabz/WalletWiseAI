@@ -2,7 +2,7 @@
 //  FirebaseService.swift
 //  WalletWiseAI
 //
-//  Created by Hannan Khan on 06/06/2024.
+//  Created by Muhammad Arslan on 06/06/2024.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  DateFormattingHelper.swift
 //  WalletWiseAI
 //
-//  Created by Hannan Khan on 14/06/2024.
+//  Created by Muhammad Arslan on 14/06/2024.
 //
 
 import Foundation

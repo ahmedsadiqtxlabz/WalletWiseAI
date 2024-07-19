@@ -2,7 +2,7 @@
 //  AppleAuthentication.swift
 //  WalletWiseAI
 //
-//  Created by Hannan Khan on 11/07/2024.
+//  Created by Muhammad Arslan on 11/07/2024.
 //
 
 import Foundation
