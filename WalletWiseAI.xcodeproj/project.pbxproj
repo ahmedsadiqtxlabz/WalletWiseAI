@@ -45,7 +45,6 @@
 		F96E331E2C11CE4000F22926 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F96E331D2C11CE4000F22926 /* GoogleSignInSwift */; };
 		F96E33202C11E18B00F22926 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E331F2C11E18B00F22926 /* FirebaseService.swift */; };
 		F96F31E22C2976ED0094F83B /* AddExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96F31E12C2976ED0094F83B /* AddExpensesView.swift */; };
-		F96F31E42C2984A00094F83B /* WalletWiseDropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96F31E32C2984A00094F83B /* WalletWiseDropDownTextField.swift */; };
 		F971674B2C18685A0080DBB5 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971674A2C18685A0080DBB5 /* CustomProgressView.swift */; };
 		F98C946D2BEBA96200C243F7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98C946C2BEBA96200C243F7 /* MainView.swift */; };
 		F98C94702BEBA9DF00C243F7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98C946F2BEBA9DF00C243F7 /* HomeView.swift */; };
@@ -128,7 +127,6 @@
 		F96E33182C11CCD800F22926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F96E331F2C11E18B00F22926 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		F96F31E12C2976ED0094F83B /* AddExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesView.swift; sourceTree = "<group>"; };
-		F96F31E32C2984A00094F83B /* WalletWiseDropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWiseDropDownTextField.swift; sourceTree = "<group>"; };
 		F971674A2C18685A0080DBB5 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		F98C946C2BEBA96200C243F7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F98C946F2BEBA9DF00C243F7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -375,7 +373,6 @@
 				F9A0ED6E2C2ED5EB004BCC50 /* DropdownTextField */,
 				F9A0ED612C2C0146004BCC50 /* WalletWiseSecureTextField.swift */,
 				F951983A2BE4E2100053F7F0 /* WalletWiseTextField.swift */,
-				F96F31E32C2984A00094F83B /* WalletWiseDropDownTextField.swift */,
 				F9A0ED632C2C018C004BCC50 /* WalletWiseCurrencyTextField.swift */,
 				F9A0ED6C2C2D6C15004BCC50 /* WalletWiseTextView.swift */,
 			);
@@ -707,7 +704,6 @@
 				F95198212BE3BBC00053F7F0 /* BorderButtonStyle.swift in Sources */,
 				F94DF7512C3524E20037F5AE /* AIInsightsCategoryView.swift in Sources */,
 				F9A0ED702C2ED614004BCC50 /* DropDownTextField.swift in Sources */,
-				F96F31E42C2984A00094F83B /* WalletWiseDropDownTextField.swift in Sources */,
 				F964BF1B2C3D158000DFF76C /* BudgetBarChartView.swift in Sources */,
 				F9F49E002C3E6F540032A6C0 /* FirebaseDatabase.swift in Sources */,
 				F9F7AD352BEA3F4600A10AB2 /* IntroView.swift in Sources */,
